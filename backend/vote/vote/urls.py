@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 import subprocess
-from datetime import timezone
+from django.utils import timezone
 from django.contrib import admin
 from django.urls import path
 from django.views.decorators.csrf import csrf_exempt
@@ -24,7 +24,7 @@ import json
 from django.http import JsonResponse
 from django.http import HttpResponseForbidden
 from django.contrib.auth import authenticate, login
-from django.contrib.auth.decorators import login_required
+# from django.contrib.auth.decorators import login_required
 from openpyxl import load_workbook
 from background_task import background
 from .models import Works, UserVoteLog
@@ -38,8 +38,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 @csrf_exempt
 def admin_login(request):
     if request.method == 'POST':
-        username = request.POST.get('username', '')
-        password = request.POST.get('password', '')
+        data = json.loads(str(request.body, encoding='utf8'))
+        username = data.get('username', '')
+        password = data.get('password', '')
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
@@ -53,28 +54,32 @@ def admin_login(request):
 
 
 def generate_pdf(url, tag):
-    print('开始处理 ' + tag + ': ' + url)
+    print('开始处理 ', tag, ': ', url)
     subprocess.run(['bash', os.path.join(BASE_DIR,
-                                         '..',
                                          'weixinCapture',
                                          'generate_pdf.sh'),
-                    url])
-    print('完成处理 ' + tag + ': ' + url)
-    return 'http://' + deploy_domain + '/media/' + tag + '.pdf'
+                    url,
+                    str(tag)])
+    print('完成处理 ', tag, ': ', url)
+    return 'http://' + deploy_domain + '/media/' + str(tag) + '.pdf'
 
 
 @background(schedule=0)
-def process_works(works, max_votes, sheet, idx):
+def process_works(max_votes, filename):
+    works = {}
+    idx = 2
+    wb = load_workbook(filename=filename)
+    sheet = wb['Sheet1']
     while True:
-        tag = sheet['A' + idx]
+        tag = sheet['A' + str(idx)].value
         if tag is not None:
             works[tag] = {
                 'tag': tag,
-                'title': sheet['B' + idx],
-                'desc': sheet['C' + idx],
-                'imageURL': sheet['D' + idx],
-                'origin_url': sheet['E' + idx],
-                'pdf_url': generate_pdf(sheet['E' + idx], tag),
+                'title': sheet['B' + str(idx)].value,
+                'desc': sheet['C' + str(idx)].value,
+                'imageURL': sheet['D' + str(idx)].value,
+                'origin_url': sheet['E' + str(idx)].value,
+                'pdf_url': generate_pdf(sheet['E' + str(idx)].value, tag),
                 'votes': 0
             }
             idx += 1
@@ -87,12 +92,17 @@ def process_works(works, max_votes, sheet, idx):
     w.save()
 
 
-@login_required
+# @login_required
 @csrf_exempt
 def upload(request):
     if request.method == 'POST':
-        max_votes = request.POST.get('max_votes', 1)
-        works = request.FILE['file']
+        # data = json.loads(str(request.body, encoding='utf8'))
+        data = request.POST
+        max_votes = data.get('max_votes', 1)
+        works = request.FILES
+        works = works.getlist(list(works.keys())[0])[0]
+        # print(works)
+        # print(json.dumps(works))
         with open('temp_works.xlsx', 'wb+') as f:
             for chunk in works.chunks():
                 f.write(chunk)
@@ -105,12 +115,16 @@ def upload(request):
             sheet['D1'].value == '图片简介',
             sheet['E1'].value == '作品链接'
         ])
+        cnt = 0
+        while True:
+            if sheet['A' + str(cnt + 2)].value is not None:
+                cnt += 1
+            else:
+                break
         if valid:
-            idx = 2
-            works = {}
-            process_works(works, max_votes, sheet, idx,
+            process_works(max_votes, 'temp_works.xlsx',
                           schedule=timezone.now())
-            return JsonResponse({'code': 'success', 'data': len(works.keys())})
+            return JsonResponse({'code': 'success', 'data': cnt})
         else:
             return JsonResponse({
                 'code': 'error',
@@ -121,7 +135,7 @@ def upload(request):
 
 
 @csrf_exempt
-@login_required
+# @login_required
 def get_results(request):
     if request.method == 'POST':
         if len(Works.objects.all()) > 0:
@@ -139,8 +153,9 @@ def get_results(request):
 @csrf_exempt
 def vote(req):
     if req.method == 'POST':
-        user_id = req.POST.get('user_id', None)
-        tag = req.POST.get('tag', None)
+        data = json.loads(str(req.body, encoding='utf8'))
+        user_id = data.get('user_id', None)
+        tag = data.get('tag', None)
         if user_id and tag:
             u = UserVoteLog.objects.filter(wechat_openid=user_id)
             max_votes = Works.objects.all()[0].max_votes
@@ -153,7 +168,7 @@ def vote(req):
                 log.save()
                 works = Works.objects.all()[0]
                 works_obj = json.loads(works.works)
-                works_obj['tag']['votes'] += 1
+                works_obj[str(tag)]['votes'] += 1
                 works.works = json.dumps(works_obj)
                 works.save()
                 return JsonResponse({'code': 'success'})
@@ -168,11 +183,12 @@ def get_works(req):
     if req.method == 'POST':
         works = Works.objects.all()
         if len(works) > 0:
-            user_id = req.POST.get('userId', None)
+            data = json.loads(str(req.body, encoding='utf8'))
+            user_id = data.get('userId', None)
             if user_id:
                 works = works[0]
                 max_votes = works.max_votes
-                works = works.works
+                works = json.loads(works.works)
                 u = UserVoteLog.objects.filter(wechat_openid=user_id)
                 for work in works:
                     works[work]['voted'] = False
@@ -205,4 +221,5 @@ urlpatterns = [
     path('get_results', get_results),
     path('vote', vote),
     path('getWorks', get_works),
+    path('upload', upload),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

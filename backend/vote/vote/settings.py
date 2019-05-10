@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -123,3 +123,51 @@ STATIC_URL = '/static/'
 # 存放 pdf
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs', 'request.log'),
+            'formatter': 'verbose',
+            'backupCount': 10,  # keep at most 10 log files
+            'maxBytes': 5242880,  # 5*1024*1024 bytes (5MB)
+        },
+        'debug_file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs', 'debug.log'),
+            'formatter': 'verbose',
+            'backupCount': 10,  # keep at most 10 log files
+            'maxBytes': 5242880,  # 5*1024*1024 bytes (5MB)
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'background_task': {
+            'handlers': ['debug_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'api': {
+            'handlers': ['debug_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}

@@ -58,6 +58,9 @@ import Dialog from '@/../static/vant/dialog/dialog'
 export default {
   data () {
     return {
+      // Test
+      deploy_domain: 'http://192.168.1.103:8080',
+      // deploy_domain: 'http://142.93.185.148:8888',
       userId: undefined,
       selectedWorkTag: '',
       showDetailAction: false,
@@ -69,40 +72,40 @@ export default {
       subname: '',
       // 作品, 先不用分页和懒加载
       works: {
-        '1': {
-          title: '作品 1',
-          tag: '1',
-          desc: '作品 1 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
-          // 指向后端存储的作品 pdf 渲染
-          pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
-          // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
-          origin_url: '',
-          imageURL: "https://avatars2.githubusercontent.com/u/8016514",
-          voted: false,
-        },
-        '2': {
-          title: '作品 2',
-          tag: '2',
-          desc: '作品 2 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
-          // 指向后端存储的作品 pdf 渲染
-          // TODO: 到时候这些 url 只能用站内 url
-          pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
-          // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
-          origin_url: '',
-          imageURL: "https://avatars2.githubusercontent.com/u/8016514",
-          voted: true,
-        },
-        '3': {
-          title: '作品 3',
-          tag: '3',
-          desc: '作品 3 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
-          // 指向后端存储的作品 pdf 渲染
-          pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
-          // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
-          origin_url: '',
-          imageURL: "https://avatars2.githubusercontent.com/u/8016514",
-          voted: false,
-        }
+        // '1': {
+        //   title: '作品 1',
+        //   tag: '1',
+        //   desc: '作品 1 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
+        //   // 指向后端存储的作品 pdf 渲染
+        //   pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
+        //   // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
+        //   origin_url: '',
+        //   imageURL: "https://avatars2.githubusercontent.com/u/8016514",
+        //   voted: false,
+        // },
+        // '2': {
+        //   title: '作品 2',
+        //   tag: '2',
+        //   desc: '作品 2 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
+        //   // 指向后端存储的作品 pdf 渲染
+        //   // TODO: 到时候这些 url 只能用站内 url
+        //   pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
+        //   // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
+        //   origin_url: '',
+        //   imageURL: "https://avatars2.githubusercontent.com/u/8016514",
+        //   voted: true,
+        // },
+        // '3': {
+        //   title: '作品 3',
+        //   tag: '3',
+        //   desc: '作品 3 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
+        //   // 指向后端存储的作品 pdf 渲染
+        //   pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
+        //   // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
+        //   origin_url: '',
+        //   imageURL: "https://avatars2.githubusercontent.com/u/8016514",
+        //   voted: false,
+        // }
       }
     }
   },
@@ -114,36 +117,39 @@ export default {
     Notify('登录成功')
     // })
     // TODO
-    fly.post('/getWorks', {
+    var _this = this
+    fly.post(this.deploy_domain + '/getWorks', {
       userId: this.userId
     }).then(function (response) {
       console.log(response);
-      if (response.code === 'success') {
-        this.works = response.data.works
-        this.max_votes = response.data.max_votes
+      if (response['data']['code'] === 'success') {
+        // console.log(response['data']['data'])
+        _this.works = response['data']['data']['works']
+        _this.max_votes = response['data']['data']['max_votes']
+        Notify('获取作品成功')
+        var voted = 0
+        var works = _this.works
+        for (var w in _this.works) {
+          if (works[w]['voted']) {
+            voted += 1
+            works[w]['btn_text'] = '已投票'
+          } else {
+            works[w]['btn_text'] = '直接投票'
+          }
+        }
+        if (voted >= _this.max_votes) {
+          _this.disable_all = true
+        }
+        _this.voted = voted
+        _this.works = works
       }
       else {
         Notify('获取作品失败')
       }
     }).catch(function (error) {
       console.log(error);
-      Notify('获取作品失败: ' + response.data);
+      Notify('获取作品失败: ' + error);
     });
-    var voted = 0
-    var works = this.works
-    for (var w in this.works) {
-      if (works[w]['voted']) {
-        voted += 1
-        works[w]['btn_text'] = '已投票'
-      } else {
-        works[w]['btn_text'] = '直接投票'
-      }
-    }
-    if (voted >= this.max_votes) {
-      this.disable_all = true
-    }
-    this.voted = voted
-    this.works = works
   },
   computed: {
     detailActions: function () {
@@ -172,7 +178,7 @@ export default {
           message: '是否确认为作品 "' + title + '"(' + tag + ') 投票, 投票后不能撤销!'
         }).then(() => {
           // TODO
-          fly.post('/vote', {
+          fly.post(this.deploy_domain + '/vote', {
             user_id: this.userId,
             tag: tag
           })

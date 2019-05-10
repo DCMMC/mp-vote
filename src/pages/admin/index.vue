@@ -10,6 +10,7 @@
 				    clearable
 				    label="用户名"
 				    placeholder="请输入用户名"
+				    @change="onUsernameChange"
 				  />
 
 				  <van-field
@@ -20,6 +21,7 @@
 				    placeholder="请输入密码"
 				    required
 				    :border="false"
+				    @change="onPwdChange"
 				  />
 				</van-cell-group>
 			  </view>
@@ -162,6 +164,7 @@ export default {
 			works: undefined,
 			// Test
 			deploy_domain: 'http://192.168.1.103:8080',
+			// deploy_domain: 'http://142.93.185.148:8888',
 		}
 	},
 	computed: {
@@ -172,17 +175,18 @@ export default {
 			wx.showLoading({
         title: '正在登录中',
       })
-
+			var _this = this
 			fly.post(this.deploy_domain + '/adminLogin', {
 		    username: this.username,
 		    password: this.password
 		  }).then(function (response) {
 		    console.log(response);
-		    if (response.code === 'success') {
-		    	wx.setStorageSync("admin_sessionid", res.header["Set-Cookie"])
+		    if (response.data.code === 'success') {
+		    	wx.setStorageSync("admin_sessionid",
+		    		response.headers["set-cookie"][0])
 		    	wx.hideLoading()
 		    	Notify('登录成功')
-		    	this.not_logined = false
+		    	_this.not_logined = false
 		    }
 		    else {
 		    	wx.hideLoading()
@@ -211,9 +215,10 @@ export default {
 			    	const tempFilePath = res.tempFiles[0]['path']
 			    	const fileName = res.tempFiles[0]['name']
 			    	if (fileName.endsWith('.xlsx')) {
+			    		console.log(JSON.stringify(wx.getStorageSync("admin_sessionid")))
 				    	_this.uploadTask = wx.uploadFile({
 					    	// TODO
-					      url: this.deploy_domain + '/upload',
+					      url: _this.deploy_domain + '/upload',
 					      filePath: tempFilePath,
 					      name: fileName,
 					      formData: {
@@ -228,10 +233,10 @@ export default {
 					      	console.log(res)
 					        // const data = res.data
 					        let data = JSON.parse(res.data)
-					        if (data.code === 'success') {
-					        	Notify('上传文件成功, 成功导入 ' + data.data)
+					        if (data['code'] === 'success') {
+					        	Notify('上传文件成功, 成功导入 ' + data['data'])
 					        } else {
-					        	Notify('上传文件失败, ' + data.data)
+					        	Notify('上传文件失败, ' + data['data'])
 					        }
 					        _this.showDialog = false
 					      		setTimeout(() => {
@@ -257,7 +262,7 @@ export default {
 					      }
 					    })
 					    _this.uploadTask.onProgressUpdate((res) => {
-							  this.upload_progress = res.progress
+							  _this.upload_progress = res.progress
 							  // console.log('已经上传的数据长度', res.totalBytesSent)
 							  // console.log('预期需要上传的数据总长度', res.totalBytesExpectedToSend)
 							})
@@ -319,9 +324,18 @@ export default {
     onContactDialogClose() {
       this.showContactDialog = false
     },
+    onUsernameChange (e) {
+    	// console.log(e.mp)
+    	this.username = e.mp.detail
+    },
+    onPwdChange(e) {
+    	// console.log(e)
+    	this.password = e.mp.detail
+    },
 		onTabBarChange (e) {
 			this.tabBarActive = e.mp.detail
 			this.uploadView = (this.tabBarActive === 0)
+			var _this = this
 			// TODO 下载数据
 			if (this.tabBarActive === 1) {
 				wx.showLoading({
@@ -334,14 +348,14 @@ export default {
         	}
         }).then(function (response) {
 			    console.log(response);
-			    if (response.code === 'success') {
+			    if (response.data.code === 'success') {
 			    	wx.hideLoading()
 			    	Notify('获取成功')
-			    	this.works = response.data
+			    	_this.works = response.data.data
 			    }
 			    else {
 			    	wx.hideLoading()
-			      Notify('获取出错 ' + response.data)
+			      Notify('获取出错 ' + response.data.data)
 			    }
 			  }).catch(function (error) {
 			    console.log(error)

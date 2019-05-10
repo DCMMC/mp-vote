@@ -21,6 +21,9 @@ import Dialog from '@/../static/vant/dialog/dialog';
 export default {
   data () {
     return {
+      // Test
+      deploy_domain: 'http://192.168.1.103:8080',
+      // deploy_domain: 'http://142.93.185.148:8888',
       userId: undefined,
       showPopup: false,
       selectedWorkTag: '',
@@ -30,37 +33,37 @@ export default {
       subname: '',
       // 作品, 先不用分页和懒加载
       works: {
-        '1': {
-          title: '作品 1',
-          tag: '1',
-          desc: '作品 1 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
-          // 指向后端存储的作品 pdf 渲染
-          pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
-          // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
-          origin_url: '',
-          imageURL: "https://avatars2.githubusercontent.com/u/8016514",
-        },
-        '2': {
-          title: '作品 2',
-          tag: '2',
-          desc: '作品 2 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
-          // 指向后端存储的作品 pdf 渲染
-          // TODO: 到时候这些 url 只能用站内 url
-          pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
-          // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
-          origin_url: '',
-          imageURL: "https://avatars2.githubusercontent.com/u/8016514",
-        },
-        '3': {
-          title: '作品 3',
-          tag: '3',
-          desc: '作品 3 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
-          // 指向后端存储的作品 pdf 渲染
-          pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
-          // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
-          origin_url: '',
-          imageURL: "https://avatars2.githubusercontent.com/u/8016514",
-        }
+        // '1': {
+        //   title: '作品 1',
+        //   tag: '1',
+        //   desc: '作品 1 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
+        //   // 指向后端存储的作品 pdf 渲染
+        //   pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
+        //   // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
+        //   origin_url: '',
+        //   imageURL: "https://avatars2.githubusercontent.com/u/8016514",
+        // },
+        // '2': {
+        //   title: '作品 2',
+        //   tag: '2',
+        //   desc: '作品 2 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
+        //   // 指向后端存储的作品 pdf 渲染
+        //   // TODO: 到时候这些 url 只能用站内 url
+        //   pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
+        //   // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
+        //   origin_url: '',
+        //   imageURL: "https://avatars2.githubusercontent.com/u/8016514",
+        // },
+        // '3': {
+        //   title: '作品 3',
+        //   tag: '3',
+        //   desc: '作品 3 的描述, TODO. 这只是简略表述, 每个作品还有一个图标, 图标有一个默认的占位符.',
+        //   // 指向后端存储的作品 pdf 渲染
+        //   pdf_url: 'https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.pdf',
+        //   // 这个是后台机器人回复该内容可以获得一个链接指向微信推送之类的地方去
+        //   origin_url: '',
+        //   imageURL: "https://avatars2.githubusercontent.com/u/8016514",
+        // }
       }
     }
   },
