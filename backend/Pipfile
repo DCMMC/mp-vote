@@ -11,4 +11,3 @@ openpyxl = "*"
 django-background-tasks = "*"
 
 [requires]
-python_version = "3.7"
