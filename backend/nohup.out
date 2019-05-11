@@ -223,3 +223,21 @@ Traceback (most recent call last):
     func(*args, **kwargs)
 TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
 Rescheduling task vote.urls.process_works for 1:08:21 later at 2019-05-10 18:19:04.080443+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 1:49:26 later at 2019-05-11 06:22:40.438323+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 1:49:26 later at 2019-05-11 06:22:51.294430+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 1:49:26 later at 2019-05-11 06:23:00.098457+00:00
