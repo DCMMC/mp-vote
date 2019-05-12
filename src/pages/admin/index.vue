@@ -163,8 +163,8 @@ export default {
 			tabBarActive: 0,
 			works: undefined,
 			// Test
-			deploy_domain: 'http://192.168.1.103:8080',
-			// deploy_domain: 'http://142.93.185.148:8888',
+			// deploy_domain: 'http://192.168.1.103:8080',
+			deploy_domain: 'http://142.93.185.148:8888',
 		}
 	},
 	computed: {

@@ -59,8 +59,8 @@ export default {
   data () {
     return {
       // Test
-      deploy_domain: 'http://192.168.1.103:8080',
-      // deploy_domain: 'http://142.93.185.148:8888',
+      // deploy_domain: 'http://192.168.1.103:8080',
+      deploy_domain: 'http://142.93.185.148:8888',
       userId: undefined,
       selectedWorkTag: '',
       showDetailAction: false,

@@ -8,5 +8,10 @@ class Works(models.Model):
 
 
 class UserVoteLog(models.Model):
-    wechat_openid = models.CharField(max_length=64, primary_key=True)
-    work_tag = models.CharField(max_length=64, unique=True)
+    wechat_openid = models.CharField(max_length=64)
+    work_tag = models.CharField(max_length=64)
+
+
+class UploadStatus(models.Model):
+    # free/loading
+    status = models.CharField(max_length=64, default='free')

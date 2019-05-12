@@ -247,3 +247,392 @@ Traceback (most recent call last):
     func(*args, **kwargs)
 TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
 Rescheduling task vote.urls.process_works for 1:49:26 later at 2019-05-11 07:22:35.051532+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 2:46:45 later at 2019-05-11 09:09:30.410695+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 2:46:45 later at 2019-05-11 09:09:40.820623+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 2:46:45 later at 2019-05-11 09:09:46.129001+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 2:46:45 later at 2019-05-11 10:09:23.684185+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 4:04:06 later at 2019-05-11 13:13:39.047757+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 4:04:06 later at 2019-05-11 13:13:49.423045+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 4:04:06 later at 2019-05-11 13:13:54.772548+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 4:04:06 later at 2019-05-11 14:13:32.535960+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 5:45:41 later at 2019-05-11 18:59:20.677253+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 5:45:41 later at 2019-05-11 18:59:30.994113+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 5:45:41 later at 2019-05-11 18:59:36.302750+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 5:45:41 later at 2019-05-11 19:59:18.823622+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 7:56:06 later at 2019-05-12 10:12:21.218331+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 7:56:06 later at 2019-05-12 10:12:22.101558+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 7:56:06 later at 2019-05-12 10:12:22.818229+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 7:56:06 later at 2019-05-12 10:12:23.660276+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 10:40:21 later at 2019-05-12 20:52:43.076060+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 10:40:21 later at 2019-05-12 20:52:43.435132+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 10:40:21 later at 2019-05-12 20:52:48.684891+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 10:40:21 later at 2019-05-12 20:52:49.002334+00:00
+Failed to retrieve tasks. Database unreachable.
+Failed to retrieve tasks. Database unreachable.
+Failed to retrieve tasks. Database unreachable.
+Failed to retrieve tasks. Database unreachable.
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:00:06 later at 2019-05-12 15:18:29.234363+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:00:21 later at 2019-05-12 15:18:54.773952+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:01:26 later at 2019-05-12 15:20:25.340871+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:04:21 later at 2019-05-12 15:24:50.999764+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:00:06 later at 2019-05-12 15:22:26.649085+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:00:21 later at 2019-05-12 15:22:52.024886+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:01:26 later at 2019-05-12 15:24:22.335061+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:04:21 later at 2019-05-12 15:28:47.975133+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:10:30 later at 2019-05-12 15:35:22.344786+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:10:30 later at 2019-05-12 15:39:18.445403+00:00
+Rescheduling vote.urls.process_works
+Traceback (most recent call last):
+  File "/home/kevin/.local/share/virtualenvs/backend-Q_IvTKKv/lib/python3.7/site-packages/background_task/tasks.py", line 43, in bg_runner
+    func(*args, **kwargs)
+TypeError: process_works() missing 2 required positional arguments: 'sheet' and 'idx'
+Rescheduling task vote.urls.process_works for 0:21:41 later at 2019-05-12 15:57:05.923276+00:00
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read
+debug
+Page opened with status [success].
+sleep end
+included js
+[33mwarn[39m: exit() was called before waiting for commands to finish. Make sure you are not calling exit() prematurely.
+[32minfo[39m: TypeError: undefined is not an object (evaluating 'this._event.broadcastPlay')
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/base42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/create_txv42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_error.html44e4f0.js,/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl42f400.js,/mmbizwap/zh_CN/htmledition/js/new_video/ctl4532b3.js,/mmbizwap/zh_CN/htmledition/js/new_video/player44cddd.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/ad45ba31.js,/mmbizwap/zh_CN/htmledition/js/new_video/plugin/proxy42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/report4306fd.js,/mmbizwap/zh_CN/htmledition/js/pages/version4video42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/localstorage42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_monitor42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/loadscript42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion42f400.js?v=1003:1052 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2676 in destroy
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:1803
+[32minfo[39m:   https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto440203.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core45a434.js,/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_like42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/video_app42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_plugin/pause_tips42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/qq_video_info45a7b2.js,/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event445789.js,/mmbizwap/zh_CN/htmledition/js/pages/iframe_communicate42f400.js,/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html42f400.js,/mmbizwap/zh_CN/htmledition/js/pages/video_appmsg433882.js:2741 in u
+[32minfo[39m:   :0 in exit
+[32minfo[39m:   phantomjs://code/index.js:270 in invokeMethod
+[32minfo[39m:   phantomjs://code/index.js:291 in executeCommand
+[32minfo[39m:   phantomjs://code/index.js:324 in read

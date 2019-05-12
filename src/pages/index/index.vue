@@ -32,7 +32,7 @@ export default {
       // 进入客服界面之前的提示信息
       subname: '',
       // 作品, 先不用分页和懒加载
-      works: {
+      // works: {
         // '1': {
         //   title: '作品 1',
         //   tag: '1',
@@ -64,7 +64,7 @@ export default {
         //   origin_url: '',
         //   imageURL: "https://avatars2.githubusercontent.com/u/8016514",
         // }
-      }
+      // }
     }
   },
   computed: {
@@ -99,8 +99,10 @@ export default {
         var _this = this
         wx.login({
             success: function (loginCode) {
-                var appid = ''; //填写微信小程序appid  
-                var secret = ''; //填写微信小程序secret  
+            	// 毫无安全性的行为, 直接把 appid 放进去
+            	// 希望 ctfer/hacker 手下留情, 反正就是一个很简陋的小程序
+                var appid = 'wxfd7ef8735b0528b6'; //填写微信小程序appid  
+                var secret = '4b19a6d11634f66eb533326e9b50146d'; //填写微信小程序secret  
 
                 //调用request请求api转换登录凭证  
                 wx.request({
@@ -109,11 +111,11 @@ export default {
                         'content-type': 'application/json'
                     },
                     success: function (res) {
-                        console.log('######### opendid=' + res.data.openid) //获取openid
+                        console.log('######### opendid' + JSON.stringify(res)) //获取openid
                         wx.hideLoading()
-                        _this.userId = res.data.openid
+                        _this.userId = res['data']['openid']
                         // debug
-                        _this.userId = '_____adminTestId'
+                        // _this.userId = '_____adminTestId'
                         wx.navigateTo({
                           url: '../vote/main?userId=' + _this.userId
                         })

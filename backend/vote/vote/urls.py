@@ -27,8 +27,13 @@ from django.contrib.auth import authenticate, login
 # from django.contrib.auth.decorators import login_required
 from openpyxl import load_workbook
 from background_task import background
-from .models import Works, UserVoteLog
+from .models import Works, UserVoteLog, UploadStatus
 import os
+# import the logging library
+import logging
+
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
 
 # deploy_domain = '142.93.185.148:8888'
 deploy_domain = '192.168.1.103:8080'
@@ -66,30 +71,42 @@ def generate_pdf(url, tag):
 
 @background(schedule=0)
 def process_works(max_votes, filename):
-    works = {}
-    idx = 2
-    wb = load_workbook(filename=filename)
-    sheet = wb['Sheet1']
-    while True:
-        tag = sheet['A' + str(idx)].value
-        if tag is not None:
-            works[tag] = {
-                'tag': tag,
-                'title': sheet['B' + str(idx)].value,
-                'desc': sheet['C' + str(idx)].value,
-                'imageURL': sheet['D' + str(idx)].value,
-                'origin_url': sheet['E' + str(idx)].value,
-                'pdf_url': generate_pdf(sheet['E' + str(idx)].value, tag),
-                'votes': 0
-            }
-            idx += 1
-        else:
-            break
-    if len(Works.objects.all()) > 0:
-        Works.objects.all()[0].delete()
-    w = Works(works=json.dumps(works))
-    w.max_votes = max_votes
-    w.save()
+    try:
+        works = {}
+        idx = 2
+        wb = load_workbook(filename=filename)
+        sheet = wb['Sheet1']
+        if not UploadStatus.objects.exists():
+            status = UploadStatus()
+            status.save()
+        status = UploadStatus.objects.all()[0]
+        status.status = 'loading'
+        status.save()
+        while True:
+            tag = sheet['A' + str(idx)].value
+            if tag is not None:
+                works[tag] = {
+                    'tag': tag,
+                    'title': sheet['B' + str(idx)].value,
+                    'desc': sheet['C' + str(idx)].value,
+                    'imageURL': sheet['D' + str(idx)].value,
+                    'origin_url': sheet['E' + str(idx)].value,
+                    'pdf_url': generate_pdf(sheet['E' + str(idx)].value, tag),
+                    'votes': 0
+                }
+                idx += 1
+            else:
+                break
+        if len(Works.objects.all()) > 0:
+            Works.objects.all()[0].delete()
+        w = Works(works=json.dumps(works))
+        w.max_votes = max_votes
+        w.save()
+        status = UploadStatus.objects.all()[0]
+        status.status = 'free'
+        status.save()
+    except Exception as e:
+        logger.error(e)
 
 
 # @login_required
@@ -138,7 +155,13 @@ def upload(request):
 # @login_required
 def get_results(request):
     if request.method == 'POST':
-        if len(Works.objects.all()) > 0:
+        status = UploadStatus.objects
+        if status.exists() and status.all()[0].status == 'loading':
+            return JsonResponse({
+                'code': 'error',
+                'data': '作品正在后台生成中!'
+            })
+        elif len(Works.objects.all()) > 0:
             works = json.loads(Works.objects.all()[0].works)
             return JsonResponse({
                 'code': 'success',
@@ -181,6 +204,12 @@ def vote(req):
 @csrf_exempt
 def get_works(req):
     if req.method == 'POST':
+        if UploadStatus.objects.exists():
+            if UploadStatus.objects.all()[0].status == 'loading': # noqa
+                return JsonResponse({
+                    'code': 'error',
+                    'data': '作品正在后台生成中'
+                })
         works = Works.objects.all()
         if len(works) > 0:
             data = json.loads(str(req.body, encoding='utf8'))
@@ -189,12 +218,15 @@ def get_works(req):
                 works = works[0]
                 max_votes = works.max_votes
                 works = json.loads(works.works)
-                u = UserVoteLog.objects.filter(wechat_openid=user_id)
-                for work in works:
-                    works[work]['voted'] = False
-                if len(u) > 0:
-                    for vote in u:
-                        works[vote.work_tag]['voted'] = True
+                if UserVoteLog.objects.exists():
+                    u = UserVoteLog.objects.filter(wechat_openid=user_id)
+                    # for i in UserVoteLog.objects.all():
+                    #     print(i.wechat_openid, i.work_tag)
+                    for work in works:
+                        works[work]['voted'] = False
+                    if len(u) > 0:
+                        for vote in u:
+                            works[vote.work_tag]['voted'] = True
                 return JsonResponse({
                     'code': 'success',
                     'data': {
