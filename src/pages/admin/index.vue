@@ -163,7 +163,7 @@ export default {
 			tabBarActive: 0,
 			works: undefined,
 			// Test
-			deploy_domain: 'https://vote.ilingyue.cn:8443',
+			deploy_domain: 'https://vote.ilingyue.cn:443',
 			// deploy_domain: 'http://142.93.185.148:8888',
 		}
 	},

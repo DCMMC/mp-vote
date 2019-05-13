@@ -59,7 +59,7 @@ export default {
   data () {
     return {
       // Test
-      deploy_domain: 'https://vote.ilingyue.cn:8443',
+      deploy_domain: 'https://vote.ilingyue.cn:443',
       // deploy_domain: 'http://142.93.185.148:8888',
       userId: undefined,
       selectedWorkTag: '',

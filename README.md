@@ -20,3 +20,6 @@ yarn build
 ## 注意
 
 最新的代码在根目录的 vant 目录下，如若使用，请自行覆盖`static/vant`目录下所有代码文件。
+
+
+> 毫无安全性可言, just a toy
