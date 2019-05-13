@@ -1,6 +1,7 @@
 pid=
 
-cert = stunnel/stunnel.pem
+cert = stunnel/certificate.crt
+key = stunnel/private.key
 foreground = yes
 output = stunnel.log
 sslVersion = all
