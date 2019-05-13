@@ -36,7 +36,8 @@ import logging
 logger = logging.getLogger(__name__)
 
 # deploy_domain = '142.93.185.148:8888'
-deploy_domain = '192.168.1.103:8080'
+# deploy_domain = '192.168.1.103:8080'
+deploy_domain = '172.20.10.2:8080'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 

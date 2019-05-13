@@ -1,0 +1,128 @@
+2019.05.13 15:31:45 LOG5[ui]: stunnel 5.51 on x86_64-pc-linux-gnu platform
+2019.05.13 15:31:45 LOG5[ui]: Compiled/running with OpenSSL 1.1.1b  26 Feb 2019
+2019.05.13 15:31:45 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6,SYSTEMD TLS:ENGINE,FIPS,OCSP,PSK,SNI
+2019.05.13 15:31:45 LOG5[ui]: Reading configuration from file /home/kevin/Projects/mp-vote/backend/stunnel/dev_https
+2019.05.13 15:31:45 LOG5[ui]: UTF-8 byte order mark not detected
+2019.05.13 15:31:45 LOG5[ui]: FIPS mode disabled
+2019.05.13 15:31:45 LOG4[ui]: Insecure file permissions on stunnel/stunnel.pem
+2019.05.13 15:31:45 LOG5[ui]: Configuration successful
+2019.05.13 15:31:45 LOG5[ui]: Binding service [https] to :::8443: Address already in use (98)
+2019.05.13 15:34:01 LOG5[0]: Service [https] accepted connection from 127.0.0.1:35350
+2019.05.13 15:34:01 LOG3[0]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:34:01 LOG5[0]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:34:01 LOG5[1]: Service [https] accepted connection from 127.0.0.1:35354
+2019.05.13 15:34:01 LOG5[2]: Service [https] accepted connection from 127.0.0.1:35358
+2019.05.13 15:34:01 LOG3[1]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:34:01 LOG5[3]: Service [https] accepted connection from 127.0.0.1:35362
+2019.05.13 15:34:01 LOG3[2]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:34:01 LOG5[2]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:34:01 LOG3[3]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:34:01 LOG5[1]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:34:01 LOG5[3]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:34:01 LOG5[4]: Service [https] accepted connection from 127.0.0.1:35366
+2019.05.13 15:34:01 LOG3[4]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:34:01 LOG5[4]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:34:01 LOG5[5]: Service [https] accepted connection from 127.0.0.1:35370
+2019.05.13 15:34:01 LOG3[5]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:34:01 LOG5[5]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:34:54 LOG3[ui]: Received SIGINT; terminating
+2019.05.13 15:35:21 LOG5[ui]: stunnel 5.51 on x86_64-pc-linux-gnu platform
+2019.05.13 15:35:21 LOG5[ui]: Compiled/running with OpenSSL 1.1.1b  26 Feb 2019
+2019.05.13 15:35:21 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6,SYSTEMD TLS:ENGINE,FIPS,OCSP,PSK,SNI
+2019.05.13 15:35:21 LOG5[ui]: Reading configuration from file /home/kevin/Projects/mp-vote/backend/stunnel/dev_https
+2019.05.13 15:35:21 LOG5[ui]: UTF-8 byte order mark not detected
+2019.05.13 15:35:21 LOG5[ui]: FIPS mode disabled
+2019.05.13 15:35:21 LOG4[ui]: Insecure file permissions on stunnel/stunnel.pem
+2019.05.13 15:35:21 LOG5[ui]: Configuration successful
+2019.05.13 15:35:21 LOG5[ui]: Binding service [https] to :::8443: Address already in use (98)
+2019.05.13 15:35:25 LOG3[ui]: Received SIGINT; terminating
+2019.05.13 15:35:41 LOG5[ui]: stunnel 5.51 on x86_64-pc-linux-gnu platform
+2019.05.13 15:35:41 LOG5[ui]: Compiled/running with OpenSSL 1.1.1b  26 Feb 2019
+2019.05.13 15:35:41 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6,SYSTEMD TLS:ENGINE,FIPS,OCSP,PSK,SNI
+2019.05.13 15:35:41 LOG5[ui]: Reading configuration from file /home/kevin/Projects/mp-vote/backend/stunnel/dev_https
+2019.05.13 15:35:41 LOG5[ui]: UTF-8 byte order mark not detected
+2019.05.13 15:35:41 LOG5[ui]: FIPS mode disabled
+2019.05.13 15:35:41 LOG4[ui]: Insecure file permissions on stunnel/stunnel.pem
+2019.05.13 15:35:41 LOG5[ui]: Configuration successful
+2019.05.13 15:35:41 LOG5[ui]: Binding service [https] to :::8443: Address already in use (98)
+2019.05.13 15:35:46 LOG5[0]: Service [https] accepted connection from 127.0.0.1:36228
+2019.05.13 15:35:46 LOG3[0]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:35:46 LOG5[0]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:35:46 LOG5[2]: Service [https] accepted connection from 127.0.0.1:36236
+2019.05.13 15:35:46 LOG3[2]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:35:46 LOG5[2]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:35:46 LOG5[1]: Service [https] accepted connection from 127.0.0.1:36232
+2019.05.13 15:35:46 LOG3[1]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:35:46 LOG5[1]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:35:46 LOG5[3]: Service [https] accepted connection from 127.0.0.1:36240
+2019.05.13 15:35:46 LOG3[3]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:35:46 LOG5[3]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:37:24 LOG5[4]: Service [https] accepted connection from 127.0.0.1:37150
+2019.05.13 15:37:24 LOG5[5]: Service [https] accepted connection from 127.0.0.1:37152
+2019.05.13 15:37:24 LOG3[4]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:37:24 LOG3[5]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:37:24 LOG5[4]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:37:24 LOG5[5]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:37:24 LOG5[6]: Service [https] accepted connection from 127.0.0.1:37154
+2019.05.13 15:37:24 LOG3[6]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:37:24 LOG5[6]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:37:24 LOG5[7]: Service [https] accepted connection from 127.0.0.1:37156
+2019.05.13 15:37:24 LOG3[7]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:37:24 LOG5[7]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:37:24 LOG5[8]: Service [https] accepted connection from 127.0.0.1:37158
+2019.05.13 15:37:24 LOG3[8]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:37:24 LOG5[8]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:37:24 LOG5[9]: Service [https] accepted connection from 127.0.0.1:37164
+2019.05.13 15:37:24 LOG3[9]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:37:24 LOG5[9]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:37:55 LOG5[10]: Service [https] accepted connection from 127.0.0.1:37426
+2019.05.13 15:37:55 LOG3[10]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:37:55 LOG5[10]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:37:55 LOG5[12]: Service [https] accepted connection from 127.0.0.1:37434
+2019.05.13 15:37:55 LOG3[12]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:37:55 LOG5[12]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:37:55 LOG5[11]: Service [https] accepted connection from 127.0.0.1:37430
+2019.05.13 15:37:55 LOG3[11]: SSL_accept: ssl/statem/statem_lib.c:110: error:141FC044:SSL routines:tls_setup_handshake:internal error
+2019.05.13 15:37:55 LOG5[11]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:39:34 LOG3[ui]: Received SIGINT; terminating
+2019.05.13 15:40:13 LOG5[ui]: stunnel 5.51 on x86_64-pc-linux-gnu platform
+2019.05.13 15:40:13 LOG5[ui]: Compiled/running with OpenSSL 1.1.1b  26 Feb 2019
+2019.05.13 15:40:13 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6,SYSTEMD TLS:ENGINE,FIPS,OCSP,PSK,SNI
+2019.05.13 15:40:13 LOG5[ui]: Reading configuration from file /home/kevin/Projects/mp-vote/backend/stunnel/dev_https
+2019.05.13 15:40:13 LOG5[ui]: UTF-8 byte order mark not detected
+2019.05.13 15:40:13 LOG5[ui]: FIPS mode disabled
+2019.05.13 15:40:13 LOG4[ui]: Insecure file permissions on stunnel/stunnel.pem
+2019.05.13 15:40:13 LOG5[ui]: Configuration successful
+2019.05.13 15:40:13 LOG5[ui]: Binding service [https] to :::8443: Address already in use (98)
+2019.05.13 15:40:25 LOG5[0]: Service [https] accepted connection from 127.0.0.1:38720
+2019.05.13 15:40:25 LOG3[0]: SSL_accept: ssl/record/rec_layer_s3.c:1536: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+2019.05.13 15:40:25 LOG5[0]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:40:25 LOG5[1]: Service [https] accepted connection from 127.0.0.1:38724
+2019.05.13 15:40:25 LOG3[1]: SSL_accept: ssl/record/rec_layer_s3.c:1536: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+2019.05.13 15:40:25 LOG5[1]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:40:26 LOG5[3]: Service [https] accepted connection from 127.0.0.1:38740
+2019.05.13 15:40:26 LOG5[2]: Service [https] accepted connection from 127.0.0.1:38736
+2019.05.13 15:40:26 LOG3[3]: SSL_accept: ssl/record/rec_layer_s3.c:1536: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+2019.05.13 15:40:26 LOG3[2]: SSL_accept: ssl/record/rec_layer_s3.c:1536: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+2019.05.13 15:40:26 LOG5[2]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:40:26 LOG5[3]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:40:34 LOG5[4]: Service [https] accepted connection from 127.0.0.1:38820
+2019.05.13 15:40:34 LOG5[5]: Service [https] accepted connection from 127.0.0.1:38824
+2019.05.13 15:40:34 LOG3[5]: SSL_accept: ssl/record/rec_layer_s3.c:1536: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+2019.05.13 15:40:34 LOG5[5]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:40:34 LOG3[4]: SSL_accept: ssl/record/rec_layer_s3.c:1536: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+2019.05.13 15:40:34 LOG5[4]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:40:57 LOG5[6]: Service [https] accepted connection from 127.0.0.1:39004
+2019.05.13 15:40:57 LOG5[7]: Service [https] accepted connection from 127.0.0.1:39008
+2019.05.13 15:40:57 LOG3[6]: SSL_accept: ssl/record/rec_layer_s3.c:1536: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+2019.05.13 15:40:57 LOG5[6]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:40:57 LOG3[7]: SSL_accept: ssl/record/rec_layer_s3.c:1536: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+2019.05.13 15:40:57 LOG5[7]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:40:57 LOG5[8]: Service [https] accepted connection from 127.0.0.1:39012
+2019.05.13 15:40:57 LOG3[8]: SSL_accept: ssl/record/rec_layer_s3.c:1536: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+2019.05.13 15:40:57 LOG5[8]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.13 15:40:57 LOG5[9]: Service [https] accepted connection from 127.0.0.1:39016
+2019.05.13 15:40:57 LOG3[9]: s_connect: connect ::1:8888: Connection refused (111)
+2019.05.13 15:40:57 LOG5[9]: s_connect: connected 127.0.0.1:8888
+2019.05.13 15:40:57 LOG5[9]: Service [https] connected remote server from 127.0.0.1:56170
+2019.05.13 15:49:14 LOG3[ui]: Received SIGINT; terminating
