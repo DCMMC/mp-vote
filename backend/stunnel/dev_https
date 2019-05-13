@@ -6,6 +6,6 @@ output = stunnel.log
 sslVersion = all
 
 [https]
-accept=ilingyue.cn:8443
+accept=8443
 connect=8888
 TIMEOUTclose=1
