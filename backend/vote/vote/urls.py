@@ -19,6 +19,7 @@ from django.contrib import admin
 from django.urls import path
 from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
+from django.shortcuts import redirect
 from django.conf.urls.static import static
 import json
 from django.http import JsonResponse
@@ -31,6 +32,7 @@ from .models import Works, UserVoteLog, UploadStatus
 import os
 # import the logging library
 import logging
+from weixin.client import WeixinMpAPI
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
@@ -39,6 +41,27 @@ logger = logging.getLogger(__name__)
 # deploy_domain = '192.168.1.103:8080'
 deploy_domain = '172.20.10.2:8080'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+wechat_appid = 'wx1f8565a373ffdead'
+wechat_appsecret = '8e16759000304ad924851a304aea4efa'
+
+
+@csrf_exempt
+def wechat_login(request):
+    if request.method == 'GET':
+        wechat_session = request.session.get('wechat_session', None)
+        if wechat_session:
+            pass
+        # else:
+        #     # require login
+        #     api = WeixinMpAPI(appid=wechat_appid, app_secret=wechat_appsecret,
+        #                       redirect_uri='http://' + deploy_domain + '/wechat_login') # noqa
+        #     authorize_url = api.get_authorize_url(scope=('snsapi_base', ))
+        #     return redirect(authorize_url)
+        logger.error(request.GET)
+        return JsonResponse({'code': 'success'})
+    elif request.method == 'POST':
+        logger.error(request.POST)
+        return JsonResponse({})
 
 
 @csrf_exempt
@@ -255,4 +278,5 @@ urlpatterns = [
     path('vote', vote),
     path('getWorks', get_works),
     path('upload', upload),
+    path('wechat_login', wechat_login),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
