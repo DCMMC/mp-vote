@@ -58,10 +58,10 @@ def wechat_login(request):
         #     authorize_url = api.get_authorize_url(scope=('snsapi_base', ))
         #     return redirect(authorize_url)
         logger.error(request.GET)
-        return JsonResponse({'code': 'success'})
+        return JsonResponse({'code': 'success', 'data': json.dumps(request.GET)}) # noqa
     elif request.method == 'POST':
         logger.error(request.POST)
-        return JsonResponse({})
+        return JsonResponse({'data': json.dumps(request.POST)})
 
 
 @csrf_exempt
