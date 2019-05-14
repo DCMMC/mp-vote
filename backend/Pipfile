@@ -9,5 +9,6 @@ verify_ssl = true
 django = "*"
 openpyxl = "*"
 django-background-tasks = "*"
+django-cors-headers = "*"
 
 [requires]

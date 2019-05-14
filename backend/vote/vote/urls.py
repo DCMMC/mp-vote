@@ -43,7 +43,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 @csrf_exempt
 def admin_login(request):
-    logger.error('###### fuck: ' + str(request))
     if request.method == 'POST':
         data = json.loads(str(request.body, encoding='utf8'))
         username = data.get('username', '')
