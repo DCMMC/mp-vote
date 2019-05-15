@@ -289,7 +289,9 @@ urlpatterns = [
     path('upload', upload),
     path('wechat_login', wechat_login),
     path('authorize', wechat_authorize),
-    path('login', wechat_login)
+    path('login', wechat_login),
     path('index.html', TemplateView.as_view(
-        template_name="index.html"))
+        template_name="index.html")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns += static('/', document_root=settings.MEDIA_ROOT)
