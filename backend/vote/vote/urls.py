@@ -18,6 +18,7 @@ from django.utils import timezone
 from django.contrib import admin
 from django.urls import path
 from django.views.decorators.csrf import csrf_exempt
+from django.views.generic.base import TemplateView
 from django.conf import settings
 from django.shortcuts import redirect
 from django.conf.urls.static import static
@@ -32,7 +33,8 @@ from .models import Works, UserVoteLog, UploadStatus
 import os
 # import the logging library
 import logging
-from weixin.client import WeixinMpAPI
+# from weixin.client import WeixinMpAPI
+from weixin.login import WeixinLogin
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
@@ -49,23 +51,26 @@ wx_login = WeixinLogin(wechat_appid, wechat_appsecret)
 @csrf_exempt
 def wechat_login(request):
     if request.session.get('openid', None):
-        return redirect('/')
+        return redirect('https://vote.ilingyue.cn/index.html')
     else:
+        return redirect(wx_login.authorize(
+            'https://vote.ilingyue.cn/authorized',
+            'snsapi_userinfo'
+        ))
+
+
+@csrf_exempt
+def wechat_authorize(request):
     if request.method == 'GET':
-        wechat_session = request.session.get('wechat_session', None)
-        if wechat_session:
-            pass
-        # else:
-        #     # require login
-        #     api = WeixinMpAPI(appid=wechat_appid, app_secret=wechat_appsecret,
-        #                       redirect_uri='http://' + deploy_domain + '/wechat_login') # noqa
-        #     authorize_url = api.get_authorize_url(scope=('snsapi_base', ))
-        #     return redirect(authorize_url)
-        logger.error(request.GET)
-        return JsonResponse({'code': 'success', 'data': json.dumps(request.GET)}) # noqa
-    elif request.method == 'POST':
-        logger.error(request.POST)
-        return JsonResponse({'data': json.dumps(request.POST)})
+        code = request.GET.get('code', None)
+        if code:
+            data = wx_login.access_token(code)
+            request.session['openid'] = data.opendid
+            return redirect('https://vote.ilingyue.cn/index.html')
+        else:
+            return HttpResponseForbidden()
+    else:
+        return HttpResponseForbidden()
 
 
 @csrf_exempt
@@ -283,4 +288,8 @@ urlpatterns = [
     path('getWorks', get_works),
     path('upload', upload),
     path('wechat_login', wechat_login),
+    path('authorize', wechat_authorize),
+    path('login', wechat_login)
+    path('index.html', TemplateView.as_view(
+        template_name="index.html"))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
