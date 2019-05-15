@@ -214,25 +214,31 @@ def vote(req):
         user_id = data.get('user_id', None)
         tag = data.get('tag', None)
         if user_id and tag:
-            u = UserVoteLog.objects.filter(wechat_openid=user_id)
-            max_votes = Works.objects.all()[0].max_votes
-            if len(u) >= max_votes:
-                return JsonResponse({'code': 'error', 'data': '您已经投过了!'})
-            else:
-                log = UserVoteLog()
-                log.work_tag = tag
-                log.wechat_openid = user_id
-                log.save()
-                works = Works.objects.all()[0]
-                works_obj = json.loads(works.works)
-                works_obj[str(tag)]['votes'] += 1
-                works.works = json.dumps(works_obj)
-                works.save()
-                return JsonResponse({'code': 'success'})
+            try:
+                u = UserVoteLog.objects.filter(wechat_openid=user_id)
+                max_votes = Works.objects.all()[0].max_votes
+                if len(u) >= max_votes:
+                    return JsonResponse({'code': 'error', 'data': '您已经投过了!'})
+                else:
+                    log = UserVoteLog()
+                    log.work_tag = tag
+                    log.wechat_openid = user_id
+                    log.save()
+                    works = Works.objects.all()[0]
+                    works_obj = json.loads(works.works)
+                    works_obj[str(tag)]['votes'] += 1
+                    works.works = json.dumps(works_obj)
+                    works.save()
+                    return JsonResponse({'code': 'success'})
+            except Exception as e:
+                return JsonResponse({
+                    'code': 'error',
+                    'data': str(e)
+                })
         else:
             return JsonResponse({'code': 'error',
-                                 'data': 'user_id={}, tag={}'.format(user_id,
-                                                                     tag)})
+                                 'data': 'user_id={}, tag={}'.format(str(user_id), # noqa
+                                                                     str(tag))}) # noqa
     else:
         return HttpResponseForbidden()
 
