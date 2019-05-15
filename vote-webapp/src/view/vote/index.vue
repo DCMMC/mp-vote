@@ -239,7 +239,7 @@ export default {
     },
     onActionSelect(actionName, subname) {
       this.showDetailAction = false
-      if (actionName === '小程序内查看') {
+      if (actionName === 'pdf 查看') {
         // wx.showLoading({
         //   title: '文件下载中',
         // })
@@ -275,8 +275,10 @@ export default {
         //   }
         // })
       } else if (actionName === '作品链接') {
-        this.subname = subname
-        this.showContactDialog = true
+        // this.subname = subname
+        // this.showContactDialog = true
+        var url = this.works[this.selectedWorkTag]['origin_url']
+        window.open(url, '_blank')
       }
       this.selectedWorkTag = ''
     }

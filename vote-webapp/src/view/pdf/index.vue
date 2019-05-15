@@ -28,12 +28,15 @@ import { NavBar } from 'vant';
 
 Vue.use(NavBar);
 var fly=require("flyio")
+import pdf from 'pdfvuer'
+
 export default {
   components: {
     [Notify.name]: Notify,
     [Dialog.name]: Dialog,
     [Toast.name]: Toast,
-    [Loading.name]: Loading
+    [Loading.name]: Loading,
+    pdf
   },
   data () {
     return {
