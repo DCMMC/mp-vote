@@ -49,12 +49,12 @@ export default {
       // 进入客服界面之前的提示信息
       subname: '',
       showDialog: false,
-      opendid: ''
+      openid: ''
     }
   },
   mouted: function () {
-    this.opendid = this.$route.query.opendid
-    if (this.opendid === '' || this.opendid === undefined || this.opendid === null) {
+    this.openid = this.$route.query.openid
+    if (this.openid === '' || this.openid === undefined || this.openid === null) {
       this.login_href = this.deploy_domain + '/login'
     }
   },
@@ -81,8 +81,8 @@ export default {
       this.$router.push('admin')
     },
     getUserInfo (e) {
-      if (this.opendid !== '') {
-        this.$router.push('vote')
+      if (this.openid !== '') {
+        this.$router.push({ name: 'vote', params: {userId: openid}})
       } else {
         Notify('还未登录')
         window.location = this.deploy_domain + '/login'

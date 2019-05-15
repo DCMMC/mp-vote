@@ -26,8 +26,18 @@ const routes = [
     name: 'vote',
     component: () => import('./view/vote'),
     meta: {
-      title: '风采展示'
-    }
+      title: '风采展示',
+      keepAlive: true
+    },
+    props: true,
+  },
+  {
+    name: 'pdf',
+    component: () => import('./view/pdf'),
+    meta: {
+      title: '作品预览',
+    },
+    props: true
   }
 ];
 

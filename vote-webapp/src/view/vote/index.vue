@@ -1,5 +1,11 @@
 <template>
   <div>
+  	<van-dialog
+      v-model="showLoadingDialog"
+      title="正在下载中"
+      :showConfirmButton="false"
+    >
+	</van-dialog>
     <van-card
       :tag="work.tag + ' 号'"
       :desc="work.desc"
@@ -55,7 +61,12 @@
 // import Notify from '@/../static/vant/notify/notify'
 // import Toast from '@/../static/vant/toast/toast'
 // import Dialog from '@/../static/vant/dialog/dialog'
-import { Notify, Dialog, Toast, Loading } from 'vant'
+import { Notify, Dialog, Toast, Loading, Button } from 'vant'
+import Vue from 'vue'
+Vue.use(Notify)
+Vue.use(Button)
+Vue.use(Dialog)
+Vue.use(Toast)
 var fly=require("flyio")
 export default {
   components: {
@@ -66,10 +77,11 @@ export default {
   },
   data () {
     return {
+      showLoadingDialog: false,
       // Test
       deploy_domain: 'https://vote.ilingyue.cn',
       // deploy_domain: 'http://142.93.185.148:8888',
-      userId: undefined,
+      // userId: undefined,
       selectedWorkTag: '',
       showDetailAction: false,
       showContactDialog: false,
@@ -117,12 +129,16 @@ export default {
       }
     }
   },
+  props: {
+  	userId: String
+  },
   onLoad (options) {
-    this.userId = this.$root.$mp.query.userId
+    // this.userId = this.$root.$mp.query.userId
   },
   mounted: function () {
     // this.$nextTick(function () {
-    Notify('登录成功')
+    Notify('登录成功: ' + this.userId)
+    // Notify('登录成功')
     // })
     // TODO
     var _this = this
@@ -163,13 +179,12 @@ export default {
     detailActions: function () {
       return [
         {
-          name: '小程序内查看',
+          name: 'pdf 查看',
           subname: '在小程序内打开作品的 pdf 版本介绍'
         },
         {
           name: '作品链接',
-          subname: '在客服号中回复 "' + this.selectedWorkTag
-            + '" 获得作品链接'
+          subname: '查看作品原始链接'
         }
       ]
     }
@@ -225,33 +240,40 @@ export default {
     onActionSelect(actionName, subname) {
       this.showDetailAction = false
       if (actionName === '小程序内查看') {
-        wx.showLoading({
-          title: '文件下载中',
-        })
-        wx.downloadFile({
-          url: this.works[this.selectedWorkTag]['pdf_url'],
-          success(res) {
-            const filePath = res.tempFilePath
-            wx.openDocument({
-              filePath,
-              success(res) {
-                wx.hideLoading()
-                console.log(res)
-                console.log('打开文档成功')
-              },
-              fail(res) {
-                wx.hideLoading()
-                console.log(res)
-                Notify('打开文件失败')
-              }
-            })
-          },
-          fail(res) {
-            wx.hideLoading()
-            console.log(res)
-            Notify('下载文件失败')
-          }
-        })
+        // wx.showLoading({
+        //   title: '文件下载中',
+        // })
+        this.showLoadingDialog = true
+        var url = this.works[this.selectedWorkTag]['pdf_url']
+        this.$router.push({ name: 'pdf', params: {
+        	pdf_src: url,
+        	openid: this.openid
+        }})
+        this.showLoadingDialog = false
+        // wx.downloadFile({
+        //   url: ,
+        //   success(res) {
+        //     const filePath = res.tempFilePath
+        //     wx.openDocument({
+        //       filePath,
+        //       success(res) {
+        //         wx.hideLoading()
+        //         console.log(res)
+        //         console.log('打开文档成功')
+        //       },
+        //       fail(res) {
+        //         wx.hideLoading()
+        //         console.log(res)
+        //         Notify('打开文件失败')
+        //       }
+        //     })
+        //   },
+        //   fail(res) {
+        //     wx.hideLoading()
+        //     console.log(res)
+        //     Notify('下载文件失败')
+        //   }
+        // })
       } else if (actionName === '作品链接') {
         this.subname = subname
         this.showContactDialog = true
