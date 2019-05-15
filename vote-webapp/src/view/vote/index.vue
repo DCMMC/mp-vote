@@ -214,11 +214,13 @@ export default {
           })
           .then(function (response) {
             console.log(response);
+            Notify(JSON.stringify(response))
             Notify('作品 "' + title + '"( ' + tag + ') 投票成功');
           })
           .catch(function (error) {
             console.log(error);
-            Notify('作品 "' + title + '"( ' + tag + ') 投票失败');
+            Notify('作品 "' + title + '"( ' + tag + ') 投票失败' + 
+            	JSON.stringify(error));
           });
           this.voted = this.voted + 1
           Notify('作品 "' + title + '"( ' + tag + ') 投票成功, 剩余可投票数 ' + (this.max_votes - this.voted) + ' 张')
