@@ -57,7 +57,7 @@ export default {
     // if (this.openid === '' || this.openid === undefined || this.openid === null) {
     //   this.login_href = this.deploy_domain + '/login'
     // }
-    // Notify(this.openid)
+    Notify(this.openid)
     // console.log(this.openid)
   },
   computed: {
@@ -83,8 +83,8 @@ export default {
       this.$router.push('admin')
     },
     getUserInfo (e) {
+      if (this.openid !== '' && this.openid !== undefined && this.openid !== null) {
       Notify('登录成功: ' + this.openid)
-      if (this.openid !== '') {
         this.$router.push({ name: 'vote', params: {userId: this.openid}})
       } else {
         Notify('还未登录')
