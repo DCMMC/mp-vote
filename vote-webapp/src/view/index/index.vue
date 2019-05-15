@@ -53,7 +53,7 @@ export default {
     }
   },
   mouted: function () {
-    this.openid = this.$route.query.openid
+    this.openid = this.$route.query['openid']
     if (this.openid === '' || this.openid === undefined || this.openid === null) {
       this.login_href = this.deploy_domain + '/login'
     }
@@ -81,6 +81,7 @@ export default {
       this.$router.push('admin')
     },
     getUserInfo (e) {
+      // Notify(this.$route.query['openid'])
       if (this.openid !== '') {
         this.$router.push({ name: 'vote', params: {userId: openid}})
       } else {
