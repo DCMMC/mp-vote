@@ -53,11 +53,12 @@ export default {
     }
   },
   mounted: function () {
-    this.openid = this.$route.query['openid']
+    var name = 'openid'
+    this.openid = decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.href) || [, ""])[1].replace(/\+/g, '%20')) || decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(window.href) || [, ""])[1].replace(/\+/g, '%20')) || this.$route.query['openid'] || undefined
     // if (this.openid === '' || this.openid === undefined || this.openid === null) {
     //   this.login_href = this.deploy_domain + '/login'
     // }
-    Notify(this.openid)
+    Notify('query:' + this.$route.query)
     // console.log(this.openid)
   },
   computed: {
