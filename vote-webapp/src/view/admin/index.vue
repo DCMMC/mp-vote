@@ -245,8 +245,12 @@ export default {
 				    }
 				  }
 				).then(function(e){
-					Notify('文件 "' + file.file.name + '" 上传成功: ' + 
-						JSON.stringify(e))
+					if (e['data']['code'] === 'success') {
+						Notify('文件 "' + file.file.name + '" 上传成功: ' + e['data']['data'])
+					} else {
+						Notify('文件上传失败: ' + e['data']['data'])
+					}
+					
 				})
 				.catch(function(e){
 					Notify('文件 "' + file.file.name + '" 上传失败: ' + JSON.stringify(e))
