@@ -215,7 +215,7 @@ export default {
           .then(function (response) {
             console.log(response);
             Notify(JSON.stringify(response))
-            Notify('作品 "' + title + '"( ' + tag + ') 投票成功');
+            // Notify('作品 "' + title + '"( ' + tag + ') 投票成功');
           })
           .catch(function (error) {
             console.log(error);
