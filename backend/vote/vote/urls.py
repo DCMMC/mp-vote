@@ -215,7 +215,10 @@ def vote(req):
         tag = data.get('tag', None)
         if user_id and tag:
             try:
-                u = UserVoteLog.objects.filter(wechat_openid=user_id)
+                if UserVoteLog.objects.exists():
+                    u = UserVoteLog.objects.filter(wechat_openid=user_id)
+                else:
+                    u = []
                 max_votes = Works.objects.all()[0].max_votes
                 if len(u) >= max_votes:
                     return JsonResponse({'code': 'error', 'data': '您已经投过了!'})
