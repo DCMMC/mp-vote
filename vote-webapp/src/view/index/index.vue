@@ -83,7 +83,7 @@ export default {
       this.$router.push('admin')
     },
     getUserInfo (e) {
-      // Notify(this.$route.query['openid'])
+      Notify('登录成功: ' + this.openid)
       if (this.openid !== '') {
         this.$router.push({ name: 'vote', params: {userId: this.openid}})
       } else {
