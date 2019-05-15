@@ -244,8 +244,9 @@ export default {
 				        'accept': 'application/json'
 				    }
 				  }
-				).then(function(){
-					Notify('文件 "' + file.file.name + '" 上传成功')
+				).then(function(e){
+					Notify('文件 "' + file.file.name + '" 上传成功: ' + 
+						JSON.stringify(e))
 				})
 				.catch(function(e){
 					Notify('文件 "' + file.file.name + '" 上传失败: ' + JSON.stringify(e))

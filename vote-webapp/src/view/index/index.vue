@@ -58,7 +58,7 @@ export default {
     // if (this.openid === '' || this.openid === undefined || this.openid === null) {
     //   this.login_href = this.deploy_domain + '/login'
     // }
-    Notify('query:' + this.$route.query)
+    // Notify('query:' + this.openid)
     // console.log(this.openid)
   },
   computed: {
