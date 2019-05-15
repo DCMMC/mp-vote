@@ -74,7 +74,13 @@ export default {
       this.$router.push('admin')
     },
     getUserInfo (e) {
-      this.$router.push('vote')
+      opendid = this.$route.query.opendid
+      if (opendid !== undefined && opendid !== null) {
+        this.$router.push('vote')
+      } else {
+        Notify('还未登录')
+      }
+      
       // if (e.target.errMsg.includes('fail')) {
       //   Notify('必须同意获取用户数据才能投票!')
       // } else {

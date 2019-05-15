@@ -293,5 +293,3 @@ urlpatterns = [
     path('index.html', TemplateView.as_view(
         template_name="index.html")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-urlpatterns += static('/', document_root=settings.MEDIA_ROOT)
