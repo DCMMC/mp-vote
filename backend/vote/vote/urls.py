@@ -50,13 +50,13 @@ wx_login = WeixinLogin(wechat_appid, wechat_appsecret)
 
 @csrf_exempt
 def wechat_login(request):
-    if request.session.get('openid', None):
-        return redirect('https://vote.ilingyue.cn/index.html')
-    else:
-        return redirect(wx_login.authorize(
-            'https://vote.ilingyue.cn/authorized',
-            'snsapi_userinfo'
-        ))
+    # if request.session.get('openid', None):
+    #     return redirect('https://vote.ilingyue.cn/index.html')
+    # else:
+    return redirect(wx_login.authorize(
+        'https://vote.ilingyue.cn/authorized',
+        'snsapi_userinfo'
+    ))
 
 
 @csrf_exempt
