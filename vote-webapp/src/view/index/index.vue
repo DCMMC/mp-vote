@@ -74,6 +74,7 @@ export default {
       this.$router.push('admin')
     },
     getUserInfo (e) {
+      this.$router.push('vote')
       // if (e.target.errMsg.includes('fail')) {
       //   Notify('必须同意获取用户数据才能投票!')
       // } else {
