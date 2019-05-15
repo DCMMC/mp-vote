@@ -175,7 +175,7 @@ export default {
         _this.works = works
       }
       else {
-        Notify('获取作品失败')
+        Notify('获取作品失败' + response['data']['data'])
       }
     }).catch(function (error) {
       console.log(error);

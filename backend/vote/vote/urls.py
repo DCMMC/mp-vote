@@ -100,7 +100,7 @@ def generate_pdf(url, tag):
                     url,
                     str(tag)])
     print('完成处理 ', tag, ': ', url)
-    return 'http://' + deploy_domain + '/media/' + str(tag) + '.pdf'
+    return 'https://' + deploy_domain + '/media/' + str(tag) + '.pdf'
 
 
 @background(schedule=0)
@@ -230,7 +230,9 @@ def vote(req):
                 works.save()
                 return JsonResponse({'code': 'success'})
         else:
-            return JsonResponse({'code': 'error'})
+            return JsonResponse({'code': 'error',
+                                 'data': 'user_id=' + str(user_id) +
+                                 ', 或者 tag=' + str(tag) + ' 有误'})
     else:
         return HttpResponseForbidden()
 
