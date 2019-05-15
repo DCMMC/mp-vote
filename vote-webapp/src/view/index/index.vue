@@ -52,11 +52,13 @@ export default {
       openid: ''
     }
   },
-  mouted: function () {
+  mounted: function () {
     this.openid = this.$route.query['openid']
-    if (this.openid === '' || this.openid === undefined || this.openid === null) {
-      this.login_href = this.deploy_domain + '/login'
-    }
+    // if (this.openid === '' || this.openid === undefined || this.openid === null) {
+    //   this.login_href = this.deploy_domain + '/login'
+    // }
+    // Notify(this.openid)
+    // console.log(this.openid)
   },
   computed: {
     detailActions: function () {
@@ -83,7 +85,7 @@ export default {
     getUserInfo (e) {
       // Notify(this.$route.query['openid'])
       if (this.openid !== '') {
-        this.$router.push({ name: 'vote', params: {userId: openid}})
+        this.$router.push({ name: 'vote', params: {userId: this.openid}})
       } else {
         Notify('还未登录')
         window.location = this.deploy_domain + '/login'

@@ -14,7 +14,7 @@
       :key="work.tag"
       :thumb="work.imageURL"
     >
-      <view slot="footer">
+      <div slot="footer">
         <van-button size="small" type="danger"
           @click="show_confirm_vote(work.tag, work.title, disable_all, work.voted)"
           :disabled="disable_all || work.voted"
@@ -24,7 +24,7 @@
         <van-button size="small" type="primary"
           @click="show_detail(work.tag)"
           round style="padding-left: 5px;">查看详情</van-button>
-      </view>
+      </div>
     </van-card>
     <van-dialog id="van-dialog" />
     <van-dialog
@@ -36,9 +36,9 @@
       title="提示"
       :message="subname"
     />
-    <van-action-sheet :show="showDetailAction" title="选择查看详情方式"
+    <van-actionsheet v-model="showDetailAction" title="选择查看详情方式"
         @close="onActionClose()">
-        <view>
+        <div>
           <van-button
             v-for="action in detailActions"
             :key="action.name"
@@ -47,8 +47,8 @@
             <!-- :open-type="action.name === '作品链接' ? 'contact' : ''"> -->
             {{ action.name }}
           </van-button>
-        </view>
-    </van-action-sheet>
+        </div>
+    </van-actionsheet>
     <van-notify id="van-notify" />
     <van-toast id="van-toast" />
   </div>
@@ -67,13 +67,20 @@ Vue.use(Notify)
 Vue.use(Button)
 Vue.use(Dialog)
 Vue.use(Toast)
+import { Actionsheet } from 'vant';
+
+Vue.use(Actionsheet);
+import { Card } from 'vant';
+
+Vue.use(Card);
 var fly=require("flyio")
 export default {
   components: {
     [Notify.name]: Notify,
     [Dialog.name]: Dialog,
     [Toast.name]: Toast,
-    [Loading.name]: Loading
+    [Loading.name]: Loading,
+    [Actionsheet.name]: Actionsheet,
   },
   data () {
     return {
@@ -277,6 +284,7 @@ export default {
       } else if (actionName === '作品链接') {
         // this.subname = subname
         // this.showContactDialog = true
+        Notify('正在转跳到作品链接')
         var url = this.works[this.selectedWorkTag]['origin_url']
         window.open(url, '_blank')
       }
