@@ -288,7 +288,7 @@ urlpatterns = [
     path('getWorks', get_works),
     path('upload', upload),
     path('wechat_login', wechat_login),
-    path('authorize', wechat_authorize),
+    path('authorized', wechat_authorize),
     path('login', wechat_login),
     path('index.html', TemplateView.as_view(
         template_name="index.html")),
