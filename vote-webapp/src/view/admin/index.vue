@@ -192,8 +192,8 @@ export default {
 			works: undefined,
 			showLoadingDialog: false,
 			// Test
-			// deploy_domain: 'http://vote.ilingyue.cn:8888',
-			deploy_domain: 'http://142.93.185.148:8888',
+			deploy_domain: 'https://vote.ilingyue.cn',
+			// deploy_domain: 'http://142.93.185.148:8888',
 		}
 	},
 	computed: {

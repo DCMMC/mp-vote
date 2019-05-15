@@ -66,7 +66,8 @@ def wechat_authorize(request):
         if code:
             data = wx_login.access_token(code)
             request.session['openid'] = data.opendid
-            return redirect('https://vote.ilingyue.cn/index.html')
+            return redirect('https://vote.ilingyue.cn/index.html?openid=' +
+                            data.opendid)
         else:
             return HttpResponseForbidden()
     else:

@@ -1,9 +1,9 @@
 <template>
   <div style="height: 100%;">
     <!-- <van-notify id="van-notify" /> -->
-    <van-button size="large" type="primary" style="position:absolute;top:50%; width: 100%;" @click="getUserInfo">
-      使用微信账号身份登录
-    </van-button>
+      <van-button size="large" type="primary" style="position:absolute;top:50%; width: 100%;" @click="getUserInfo">
+        使用微信账号身份登录
+      </van-button>
     <van-button size="large" style="position:absolute;top:80%;width: 100%;" @click="toAdmin()">
     管理员登录
     </van-button>
@@ -39,7 +39,7 @@ export default {
   data () {
     return {
       // Test
-      deploy_domain: 'https://vote.ilingyue.cn:443',
+      deploy_domain: 'https://vote.ilingyue.cn',
       // deploy_domain: 'http://142.93.185.148:8888',
       userId: undefined,
       showPopup: false,
@@ -48,7 +48,14 @@ export default {
       showContactDialog: false,
       // 进入客服界面之前的提示信息
       subname: '',
-      showDialog: false
+      showDialog: false,
+      opendid: ''
+    }
+  },
+  mouted: function () {
+    this.opendid = this.$route.query.opendid
+    if (this.opendid === '' || this.opendid === undefined || this.opendid === null) {
+      this.login_href = this.deploy_domain + '/login'
     }
   },
   computed: {
@@ -74,11 +81,11 @@ export default {
       this.$router.push('admin')
     },
     getUserInfo (e) {
-      opendid = this.$route.query.opendid
-      if (opendid !== undefined && opendid !== null) {
+      if (this.opendid !== '') {
         this.$router.push('vote')
       } else {
         Notify('还未登录')
+        window.location = this.deploy_domain + '/login'
       }
       
       // if (e.target.errMsg.includes('fail')) {
