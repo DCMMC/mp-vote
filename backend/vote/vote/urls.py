@@ -137,6 +137,8 @@ def process_works(max_votes, filename):
         w.max_votes = max_votes
         w.save()
         status = UploadStatus.objects.all()[0]
+        if UserVoteLog.objects.exists():
+            UserVoteLog.objects.all().delete()
         status.status = 'free'
         status.save()
     except Exception as e:
