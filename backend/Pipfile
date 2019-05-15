@@ -10,6 +10,7 @@ django = "*"
 openpyxl = "*"
 django-background-tasks = "*"
 django-cors-headers = "*"
-python-weixin = "*"
+flask = "*"
+weixin-python = "*"
 
 [requires]

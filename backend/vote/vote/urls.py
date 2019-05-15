@@ -39,14 +39,18 @@ logger = logging.getLogger(__name__)
 
 # deploy_domain = '142.93.185.148:8888'
 # deploy_domain = '192.168.1.103:8080'
-deploy_domain = '172.20.10.2:8080'
+deploy_domain = 'vote.ilingyue.cn'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 wechat_appid = 'wx1f8565a373ffdead'
 wechat_appsecret = '8e16759000304ad924851a304aea4efa'
+wx_login = WeixinLogin(wechat_appid, wechat_appsecret)
 
 
 @csrf_exempt
 def wechat_login(request):
+    if request.session.get('openid', None):
+        return redirect('/')
+    else:
     if request.method == 'GET':
         wechat_session = request.session.get('wechat_session', None)
         if wechat_session:

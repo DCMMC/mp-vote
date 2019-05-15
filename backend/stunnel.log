@@ -126,3 +126,232 @@
 2019.05.13 15:40:57 LOG5[9]: s_connect: connected 127.0.0.1:8888
 2019.05.13 15:40:57 LOG5[9]: Service [https] connected remote server from 127.0.0.1:56170
 2019.05.13 15:49:14 LOG3[ui]: Received SIGINT; terminating
+2019.05.14 09:34:39 LOG5[ui]: stunnel 5.44 on x86_64-redhat-linux-gnu platform
+2019.05.14 09:34:39 LOG5[ui]: Compiled/running with OpenSSL 1.0.2k-fips  26 Jan 2017
+2019.05.14 09:34:39 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,FIPS,OCSP,PSK,SNI Auth:LIBWRAP
+2019.05.14 09:34:39 LOG5[ui]: Reading configuration from file /root/mp-vote/backend/stunnel/dev_https
+2019.05.14 09:34:39 LOG5[ui]: UTF-8 byte order mark not detected
+2019.05.14 09:34:39 LOG5[ui]: FIPS mode disabled
+2019.05.14 09:34:39 LOG4[ui]: Insecure file permissions on stunnel/private.key
+2019.05.14 09:34:39 LOG5[ui]: Configuration successful
+2019.05.14 09:35:18 LOG5[ui]: Terminated
+2019.05.14 09:35:21 LOG5[ui]: stunnel 5.44 on x86_64-redhat-linux-gnu platform
+2019.05.14 09:35:21 LOG5[ui]: Compiled/running with OpenSSL 1.0.2k-fips  26 Jan 2017
+2019.05.14 09:35:21 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,FIPS,OCSP,PSK,SNI Auth:LIBWRAP
+2019.05.14 09:35:21 LOG5[ui]: Reading configuration from file /root/mp-vote/backend/stunnel/dev_https
+2019.05.14 09:35:21 LOG5[ui]: UTF-8 byte order mark not detected
+2019.05.14 09:35:21 LOG5[ui]: FIPS mode disabled
+2019.05.14 09:35:21 LOG4[ui]: Insecure file permissions on stunnel/private.key
+2019.05.14 09:35:21 LOG5[ui]: Configuration successful
+2019.05.14 10:36:52 LOG5[0]: Service [https] accepted connection from 91.107.64.185:46570
+2019.05.14 10:36:52 LOG5[0]: s_connect: connected 127.0.0.1:8888
+2019.05.14 10:36:52 LOG5[0]: Service [https] connected remote server from 127.0.0.1:53172
+2019.05.14 10:36:52 LOG5[0]: Connection closed: 266 byte(s) sent to TLS, 177 byte(s) sent to socket
+2019.05.14 11:37:34 LOG5[1]: Service [https] accepted connection from 162.243.144.166:58872
+2019.05.14 11:37:34 LOG3[1]: s_connect: connect ::1:8888: Connection refused (111)
+2019.05.14 11:37:34 LOG5[1]: s_connect: connected 127.0.0.1:8888
+2019.05.14 11:37:34 LOG5[1]: Service [https] connected remote server from 127.0.0.1:53300
+2019.05.14 11:37:44 LOG5[1]: Connection closed: 266 byte(s) sent to TLS, 111 byte(s) sent to socket
+2019.05.14 12:13:40 LOG5[2]: Service [https] accepted connection from 92.118.37.91:35096
+2019.05.14 12:13:40 LOG5[2]: s_connect: connected 127.0.0.1:8888
+2019.05.14 12:13:40 LOG5[2]: Service [https] connected remote server from 127.0.0.1:53376
+2019.05.14 12:13:40 LOG5[2]: Connection closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 12:19:42 LOG5[3]: Service [https] accepted connection from 92.118.37.91:39024
+2019.05.14 12:19:43 LOG3[3]: SSL_accept: Peer suddenly disconnected
+2019.05.14 12:19:43 LOG5[3]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 12:21:40 LOG5[4]: Service [https] accepted connection from 92.118.37.91:41540
+2019.05.14 12:21:46 LOG5[4]: s_connect: connected 127.0.0.1:8888
+2019.05.14 12:21:46 LOG5[4]: Service [https] connected remote server from 127.0.0.1:53394
+2019.05.14 12:21:48 LOG5[4]: Connection closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 12:27:39 LOG5[5]: Service [https] accepted connection from 176.58.124.134:38660
+2019.05.14 12:27:39 LOG3[5]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2019.05.14 12:27:39 LOG5[5]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 14:07:36 LOG5[6]: Service [https] accepted connection from 61.219.11.153:61643
+2019.05.14 14:07:38 LOG3[6]: SSL_accept: 1407609C: error:1407609C:SSL routines:SSL23_GET_CLIENT_HELLO:http request
+2019.05.14 14:07:38 LOG5[6]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 14:51:31 LOG5[ui]: Terminated
+2019.05.14 14:51:35 LOG5[ui]: stunnel 5.44 on x86_64-redhat-linux-gnu platform
+2019.05.14 14:51:35 LOG5[ui]: Compiled/running with OpenSSL 1.0.2k-fips  26 Jan 2017
+2019.05.14 14:51:35 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,FIPS,OCSP,PSK,SNI Auth:LIBWRAP
+2019.05.14 14:51:35 LOG5[ui]: Reading configuration from file /root/mp-vote/backend/stunnel/dev_https
+2019.05.14 14:51:35 LOG5[ui]: UTF-8 byte order mark not detected
+2019.05.14 14:51:35 LOG5[ui]: FIPS mode disabled
+2019.05.14 14:51:35 LOG4[ui]: Insecure file permissions on stunnel/private.key
+2019.05.14 14:51:35 LOG5[ui]: Configuration successful
+2019.05.14 14:53:16 LOG5[ui]: Terminated
+2019.05.14 14:53:19 LOG5[ui]: stunnel 5.44 on x86_64-redhat-linux-gnu platform
+2019.05.14 14:53:19 LOG5[ui]: Compiled/running with OpenSSL 1.0.2k-fips  26 Jan 2017
+2019.05.14 14:53:19 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,FIPS,OCSP,PSK,SNI Auth:LIBWRAP
+2019.05.14 14:53:19 LOG5[ui]: Reading configuration from file /root/mp-vote/backend/stunnel/dev_https
+2019.05.14 14:53:19 LOG5[ui]: UTF-8 byte order mark not detected
+2019.05.14 14:53:19 LOG5[ui]: FIPS mode disabled
+2019.05.14 14:53:19 LOG4[ui]: Insecure file permissions on stunnel/private.key
+2019.05.14 14:53:19 LOG5[ui]: Configuration successful
+2019.05.14 14:53:55 LOG5[0]: Service [https] accepted connection from 183.192.90.7:17491
+2019.05.14 14:54:00 LOG3[0]: SSL_accept: 14094418: error:14094418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca
+2019.05.14 14:54:00 LOG5[0]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 14:54:53 LOG5[ui]: Terminated
+2019.05.14 14:54:55 LOG5[ui]: stunnel 5.44 on x86_64-redhat-linux-gnu platform
+2019.05.14 14:54:55 LOG5[ui]: Compiled/running with OpenSSL 1.0.2k-fips  26 Jan 2017
+2019.05.14 14:54:55 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,FIPS,OCSP,PSK,SNI Auth:LIBWRAP
+2019.05.14 14:54:55 LOG5[ui]: Reading configuration from file /root/mp-vote/backend/stunnel/dev_https
+2019.05.14 14:54:55 LOG5[ui]: UTF-8 byte order mark not detected
+2019.05.14 14:54:55 LOG5[ui]: FIPS mode disabled
+2019.05.14 14:54:55 LOG4[ui]: Insecure file permissions on stunnel/private.key
+2019.05.14 14:54:55 LOG5[ui]: Configuration successful
+2019.05.14 14:55:07 LOG5[0]: Service [https] accepted connection from 183.192.90.7:17529
+2019.05.14 14:55:10 LOG3[0]: SSL_accept: 14094418: error:14094418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca
+2019.05.14 14:55:10 LOG5[0]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 14:55:18 LOG5[1]: Service [https] accepted connection from 183.192.90.7:17537
+2019.05.14 14:55:19 LOG3[1]: SSL_accept: 14094418: error:14094418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca
+2019.05.14 14:55:19 LOG5[1]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 14:55:27 LOG5[2]: Service [https] accepted connection from 183.192.90.7:17545
+2019.05.14 14:55:28 LOG5[3]: Service [https] accepted connection from 183.192.90.7:17546
+2019.05.14 14:55:28 LOG3[2]: s_connect: connect ::1:8888: Connection refused (111)
+2019.05.14 14:55:28 LOG5[2]: s_connect: connected 127.0.0.1:8888
+2019.05.14 14:55:28 LOG5[2]: Service [https] connected remote server from 127.0.0.1:53972
+2019.05.14 14:55:28 LOG3[3]: s_connect: connect ::1:8888: Connection refused (111)
+2019.05.14 14:55:28 LOG5[3]: s_connect: connected 127.0.0.1:8888
+2019.05.14 14:55:28 LOG5[3]: Service [https] connected remote server from 127.0.0.1:53976
+2019.05.14 14:55:29 LOG5[4]: Service [https] accepted connection from 183.192.90.7:17548
+2019.05.14 14:55:32 LOG5[4]: s_connect: connected 127.0.0.1:8888
+2019.05.14 14:55:32 LOG5[4]: Service [https] connected remote server from 127.0.0.1:53980
+2019.05.14 14:57:42 LOG3[4]: transfer: s_poll_wait: TIMEOUTclose exceeded: closing
+2019.05.14 14:57:42 LOG5[4]: Connection closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 14:57:42 LOG3[3]: transfer: s_poll_wait: TIMEOUTclose exceeded: closing
+2019.05.14 14:57:42 LOG5[3]: Connection closed: 266 byte(s) sent to TLS, 306 byte(s) sent to socket
+2019.05.14 14:57:42 LOG3[2]: transfer: s_poll_wait: TIMEOUTclose exceeded: closing
+2019.05.14 14:57:42 LOG5[2]: Connection closed: 748 byte(s) sent to TLS, 1273 byte(s) sent to socket
+2019.05.14 14:57:42 LOG5[ui]: Terminated
+2019.05.14 14:57:45 LOG5[ui]: stunnel 5.44 on x86_64-redhat-linux-gnu platform
+2019.05.14 14:57:45 LOG5[ui]: Compiled/running with OpenSSL 1.0.2k-fips  26 Jan 2017
+2019.05.14 14:57:45 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,FIPS,OCSP,PSK,SNI Auth:LIBWRAP
+2019.05.14 14:57:45 LOG5[ui]: Reading configuration from file /root/mp-vote/backend/stunnel/dev_https
+2019.05.14 14:57:45 LOG5[ui]: UTF-8 byte order mark not detected
+2019.05.14 14:57:45 LOG5[ui]: FIPS mode disabled
+2019.05.14 14:57:45 LOG4[ui]: Insecure file permissions on stunnel/private.key
+2019.05.14 14:57:45 LOG5[ui]: Configuration successful
+2019.05.14 15:11:28 LOG5[0]: Service [https] accepted connection from 183.192.90.7:18471
+2019.05.14 15:11:29 LOG5[0]: s_connect: connected 127.0.0.1:8888
+2019.05.14 15:11:29 LOG5[0]: Service [https] connected remote server from 127.0.0.1:54600
+2019.05.14 15:11:32 LOG5[0]: Connection closed: 266 byte(s) sent to TLS, 385 byte(s) sent to socket
+2019.05.14 15:12:28 LOG5[1]: Service [https] accepted connection from 61.151.178.177:42841
+2019.05.14 15:12:28 LOG3[1]: SSL_accept: Peer suddenly disconnected
+2019.05.14 15:12:28 LOG5[1]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 15:18:11 LOG5[2]: Service [https] accepted connection from 183.192.90.7:18882
+2019.05.14 15:18:11 LOG5[2]: s_connect: connected 127.0.0.1:8888
+2019.05.14 15:18:11 LOG5[2]: Service [https] connected remote server from 127.0.0.1:54780
+2019.05.14 15:18:24 LOG5[2]: Connection closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 15:19:48 LOG5[3]: Service [https] accepted connection from 183.192.172.11:19498
+2019.05.14 15:19:50 LOG3[3]: s_connect: connect ::1:8888: Connection refused (111)
+2019.05.14 15:19:50 LOG5[3]: s_connect: connected 127.0.0.1:8888
+2019.05.14 15:19:50 LOG5[3]: Service [https] connected remote server from 127.0.0.1:54828
+2019.05.14 15:19:51 LOG5[3]: Connection closed: 266 byte(s) sent to TLS, 152 byte(s) sent to socket
+2019.05.14 15:20:24 LOG5[4]: Service [https] accepted connection from 183.192.172.11:19500
+2019.05.14 15:20:25 LOG5[4]: s_connect: connected 127.0.0.1:8888
+2019.05.14 15:20:25 LOG5[4]: Service [https] connected remote server from 127.0.0.1:54842
+2019.05.14 15:20:25 LOG5[4]: Connection closed: 266 byte(s) sent to TLS, 152 byte(s) sent to socket
+2019.05.14 17:15:30 LOG5[5]: Service [https] accepted connection from 122.228.19.79:29614
+2019.05.14 17:15:30 LOG3[5]: s_connect: connect ::1:8888: Connection refused (111)
+2019.05.14 17:15:30 LOG5[5]: s_connect: connected 127.0.0.1:8888
+2019.05.14 17:15:30 LOG5[5]: Service [https] connected remote server from 127.0.0.1:58040
+2019.05.14 17:15:31 LOG5[5]: Connection closed: 266 byte(s) sent to TLS, 177 byte(s) sent to socket
+2019.05.14 20:26:10 LOG5[6]: Service [https] accepted connection from 107.170.200.205:59360
+2019.05.14 20:26:12 LOG3[6]: SSL_accept: 1408A0C1: error:1408A0C1:SSL routines:ssl3_get_client_hello:no shared cipher
+2019.05.14 20:26:12 LOG5[6]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 20:57:50 LOG5[7]: Service [https] accepted connection from 195.154.61.206:43565
+2019.05.14 20:57:51 LOG3[7]: s_connect: connect ::1:8888: Connection refused (111)
+2019.05.14 20:57:51 LOG5[7]: s_connect: connected 127.0.0.1:8888
+2019.05.14 20:57:51 LOG5[7]: Service [https] connected remote server from 127.0.0.1:35616
+2019.05.14 20:58:04 LOG5[7]: Connection closed: 266 byte(s) sent to TLS, 238 byte(s) sent to socket
+2019.05.14 21:18:32 LOG5[8]: Service [https] accepted connection from 162.243.151.182:52342
+2019.05.14 21:18:32 LOG5[8]: s_connect: connected 127.0.0.1:8888
+2019.05.14 21:18:32 LOG5[8]: Service [https] connected remote server from 127.0.0.1:36158
+2019.05.14 21:18:32 LOG5[8]: Connection closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.14 23:45:46 LOG5[9]: Service [https] accepted connection from 196.52.43.90:56319
+2019.05.14 23:45:48 LOG3[9]: SSL_accept: Peer suddenly disconnected
+2019.05.14 23:45:48 LOG5[9]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 00:53:16 LOG5[10]: Service [https] accepted connection from 184.105.139.68:51774
+2019.05.15 00:53:19 LOG5[10]: s_connect: connected 127.0.0.1:8888
+2019.05.15 00:53:19 LOG5[10]: Service [https] connected remote server from 127.0.0.1:41780
+2019.05.15 00:53:20 LOG5[10]: Connection closed: 266 byte(s) sent to TLS, 40 byte(s) sent to socket
+2019.05.15 00:54:54 LOG5[11]: Service [https] accepted connection from 184.105.139.68:9700
+2019.05.15 00:54:54 LOG3[11]: SSL_accept: 1408A10B: error:1408A10B:SSL routines:ssl3_get_client_hello:wrong version number
+2019.05.15 00:54:54 LOG5[11]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 00:55:20 LOG5[12]: Service [https] accepted connection from 184.105.139.68:6962
+2019.05.15 00:55:20 LOG3[12]: SSL_accept: 1408A0C1: error:1408A0C1:SSL routines:ssl3_get_client_hello:no shared cipher
+2019.05.15 00:55:20 LOG5[12]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 00:55:44 LOG5[13]: Service [https] accepted connection from 184.105.139.68:4214
+2019.05.15 00:55:45 LOG3[13]: SSL_accept: 1408A0C1: error:1408A0C1:SSL routines:ssl3_get_client_hello:no shared cipher
+2019.05.15 00:55:45 LOG5[13]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 01:19:00 LOG5[14]: Service [https] accepted connection from 104.248.85.56:39922
+2019.05.15 01:19:00 LOG3[14]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2019.05.15 01:19:00 LOG5[14]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 01:32:40 LOG5[15]: Service [https] accepted connection from 71.6.232.7:46034
+2019.05.15 01:32:41 LOG3[15]: s_connect: connect ::1:8888: Connection refused (111)
+2019.05.15 01:32:41 LOG5[15]: s_connect: connected 127.0.0.1:8888
+2019.05.15 01:32:41 LOG5[15]: Service [https] connected remote server from 127.0.0.1:42808
+2019.05.15 01:32:48 LOG5[15]: Connection closed: 266 byte(s) sent to TLS, 205 byte(s) sent to socket
+2019.05.15 03:26:05 LOG5[16]: Service [https] accepted connection from 131.153.31.59:51751
+2019.05.15 03:26:05 LOG5[16]: s_connect: connected 127.0.0.1:8888
+2019.05.15 03:26:05 LOG5[16]: Service [https] connected remote server from 127.0.0.1:45756
+2019.05.15 03:26:05 LOG5[16]: Connection closed: 266 byte(s) sent to TLS, 78 byte(s) sent to socket
+2019.05.15 05:10:59 LOG5[17]: Service [https] accepted connection from 198.108.66.240:5572
+2019.05.15 05:10:59 LOG3[17]: SSL_accept: 1408A10B: error:1408A10B:SSL routines:ssl3_get_client_hello:wrong version number
+2019.05.15 05:10:59 LOG5[17]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 06:36:36 LOG5[18]: Service [https] accepted connection from 176.58.124.134:57266
+2019.05.15 06:36:36 LOG3[18]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2019.05.15 06:36:36 LOG5[18]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 07:02:25 LOG5[19]: Service [https] accepted connection from 164.52.24.162:49001
+2019.05.15 07:02:25 LOG3[19]: SSL_accept: 1407609C: error:1407609C:SSL routines:SSL23_GET_CLIENT_HELLO:http request
+2019.05.15 07:02:25 LOG5[19]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 07:16:05 LOG5[20]: Service [https] accepted connection from 139.162.113.204:39724
+2019.05.15 07:16:05 LOG5[20]: s_connect: connected 127.0.0.1:8888
+2019.05.15 07:16:05 LOG5[20]: Service [https] connected remote server from 127.0.0.1:51818
+2019.05.15 07:16:06 LOG5[20]: Connection closed: 266 byte(s) sent to TLS, 122 byte(s) sent to socket
+2019.05.15 09:04:04 LOG5[21]: Service [https] accepted connection from 178.128.194.144:44324
+2019.05.15 09:04:05 LOG3[21]: s_connect: connect ::1:8888: Connection refused (111)
+2019.05.15 09:04:05 LOG5[21]: s_connect: connected 127.0.0.1:8888
+2019.05.15 09:04:05 LOG5[21]: Service [https] connected remote server from 127.0.0.1:54648
+2019.05.15 09:04:05 LOG5[21]: Connection closed: 266 byte(s) sent to TLS, 207 byte(s) sent to socket
+2019.05.15 09:04:05 LOG5[22]: Service [https] accepted connection from 178.128.194.144:44612
+2019.05.15 09:04:05 LOG3[22]: SSL_accept: 1407609C: error:1407609C:SSL routines:SSL23_GET_CLIENT_HELLO:http request
+2019.05.15 09:04:05 LOG5[22]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 09:04:05 LOG5[23]: Service [https] accepted connection from 178.128.194.144:44756
+2019.05.15 09:04:05 LOG3[23]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2019.05.15 09:04:05 LOG5[23]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 09:24:04 LOG5[24]: Service [https] accepted connection from 124.207.119.80:50436
+2019.05.15 09:24:05 LOG5[24]: s_connect: connected 127.0.0.1:8888
+2019.05.15 09:24:05 LOG5[24]: Service [https] connected remote server from 127.0.0.1:55168
+2019.05.15 09:24:14 LOG5[24]: Connection closed: 266 byte(s) sent to TLS, 111 byte(s) sent to socket
+2019.05.15 09:24:34 LOG5[25]: Service [https] accepted connection from 35.246.247.9:53824
+2019.05.15 09:24:34 LOG3[25]: s_connect: connect ::1:8888: Connection refused (111)
+2019.05.15 09:24:34 LOG5[25]: s_connect: connected 127.0.0.1:8888
+2019.05.15 09:24:34 LOG5[25]: Service [https] connected remote server from 127.0.0.1:55186
+2019.05.15 09:24:34 LOG5[25]: Connection closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 10:53:58 LOG5[26]: Service [https] accepted connection from 106.75.3.52:53780
+2019.05.15 10:53:58 LOG3[26]: SSL_accept: 1407609C: error:1407609C:SSL routines:SSL23_GET_CLIENT_HELLO:http request
+2019.05.15 10:53:58 LOG5[26]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 10:54:04 LOG5[27]: Service [https] accepted connection from 106.75.3.52:57382
+2019.05.15 10:54:04 LOG3[27]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2019.05.15 10:54:04 LOG5[27]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 11:03:10 LOG5[28]: Service [https] accepted connection from 108.178.16.154:39392
+2019.05.15 11:03:10 LOG3[28]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2019.05.15 11:03:10 LOG5[28]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 11:03:13 LOG5[29]: Service [https] accepted connection from 108.178.16.154:41488
+2019.05.15 11:03:13 LOG3[29]: SSL_accept: 1408A0A0: error:1408A0A0:SSL routines:ssl3_get_client_hello:length too short
+2019.05.15 11:03:13 LOG5[29]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 11:17:45 LOG3[30]: getpeerbyname (local_rfd): Transport endpoint is not connected (107)
+2019.05.15 11:17:45 LOG5[30]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 11:17:45 LOG5[31]: Service [https] accepted connection from 92.119.160.11:22347
+2019.05.15 11:17:45 LOG3[31]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2019.05.15 11:17:45 LOG5[31]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 11:17:45 LOG5[32]: Service [https] accepted connection from 92.119.160.11:22859
+2019.05.15 11:17:45 LOG3[32]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2019.05.15 11:17:45 LOG5[32]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 11:45:56 LOG5[33]: Service [https] accepted connection from 185.10.68.172:45728
+2019.05.15 11:45:56 LOG3[33]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2019.05.15 11:45:56 LOG5[33]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2019.05.15 11:45:56 LOG5[34]: Service [https] accepted connection from 185.10.68.172:45876
+2019.05.15 11:45:56 LOG3[34]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+2019.05.15 11:45:56 LOG5[34]: Connection reset: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
