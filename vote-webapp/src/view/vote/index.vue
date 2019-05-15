@@ -179,7 +179,7 @@ export default {
       }
     }).catch(function (error) {
       console.log(error);
-      Notify('获取作品失败: ' + error);
+      Notify('获取作品失败: ' + JSON.stringify(error));
     });
   },
   computed: {
