@@ -109,33 +109,33 @@ def generate_pdf(url, tag):
 
 
 def process_works(max_votes, filename):
-        works = {}
-        idx = 2
-        wb = load_workbook(filename=filename)
-        sheet = wb['Sheet1']
-        while True:
-            tag = sheet['A' + str(idx)].value
-            if tag is not None:
-                works[tag] = {
-                    'tag': tag,
-                    'title': sheet['B' + str(idx)].value,
-                    'desc': sheet['C' + str(idx)].value,
-                    'imageURL': sheet['D' + str(idx)].value,
-                    'origin_url': sheet['E' + str(idx)].value,
-                    # 'pdf_url': generate_pdf(sheet['E' + str(idx)].value, tag),
-                    'pdf_url': sheet['E' + str(idx)].value,
-                    'votes': 0
-                }
-                idx += 1
-            else:
-                break
-        # if len(Works.objects.all()) > 0:
-        #     Works.objects.all()[0].delete()
-        # w = Works(works=json.dumps(works))
-        # w.max_votes = max_votes
-        # w.save()
-        # if UserVoteLog.objects.exists():
-        #     UserVoteLog.objects.all().delete()
+    works = {}
+    idx = 2
+    wb = load_workbook(filename=filename)
+    sheet = wb['Sheet1']
+    while True:
+        tag = sheet['A' + str(idx)].value
+        if tag is not None:
+            works[tag] = {
+                'tag': tag,
+                'title': sheet['B' + str(idx)].value,
+                'desc': sheet['C' + str(idx)].value,
+                'imageURL': sheet['D' + str(idx)].value,
+                'origin_url': sheet['E' + str(idx)].value,
+                # 'pdf_url': generate_pdf(sheet['E' + str(idx)].value, tag),
+                'pdf_url': sheet['E' + str(idx)].value,
+                'votes': 0
+            }
+            idx += 1
+        else:
+            break
+    # if len(Works.objects.all()) > 0:
+    #     Works.objects.all()[0].delete()
+    # w = Works(works=json.dumps(works))
+    # w.max_votes = max_votes
+    # w.save()
+    # if UserVoteLog.objects.exists():
+    #     UserVoteLog.objects.all().delete()
 
 
 # @login_required
