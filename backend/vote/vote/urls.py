@@ -108,19 +108,11 @@ def generate_pdf(url, tag):
         return 'https://' + deploy_domain + '/media/' + str(tag) + '.pdf'
 
 
-@background(schedule=0)
 def process_works(max_votes, filename):
-    try:
         works = {}
         idx = 2
         wb = load_workbook(filename=filename)
         sheet = wb['Sheet1']
-        if not UploadStatus.objects.exists():
-            status = UploadStatus()
-            status.save()
-        status = UploadStatus.objects.all()[0]
-        status.status = 'loading'
-        status.save()
         while True:
             tag = sheet['A' + str(idx)].value
             if tag is not None:
@@ -142,13 +134,8 @@ def process_works(max_votes, filename):
         # w = Works(works=json.dumps(works))
         # w.max_votes = max_votes
         # w.save()
-        status = UploadStatus.objects.all()[0]
         # if UserVoteLog.objects.exists():
         #     UserVoteLog.objects.all().delete()
-        status.status = 'free'
-        status.save()
-    except Exception as e:
-        logger.error(e)
 
 
 # @login_required
@@ -181,8 +168,7 @@ def upload(request):
             else:
                 break
         if valid:
-            process_works(max_votes, 'temp_works.xlsx',
-                          schedule=timezone.now())
+            process_works(max_votes, 'temp_works.xlsx')
             return JsonResponse({'code': 'success', 'data': cnt})
         else:
             return JsonResponse({
