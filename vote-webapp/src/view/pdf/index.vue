@@ -66,6 +66,7 @@ export default {
       this.$router.go(-1)
     },
     loading (e) {
+      console.log(JSON.stringify(e))
       this.showLoadingDialog = (e < 1.0)
     }
   }
