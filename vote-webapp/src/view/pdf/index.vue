@@ -1,11 +1,11 @@
 <template>
   <div>
-  	<van-nav-bar
+  	<!-- <van-nav-bar
       title="作品预览"
       left-text="返回"
       left-arrow
       @click-left="onClickLeft"
-    />
+    /> -->
     <van-dialog
       v-model="showLoadingDialog"
       title="正在下载中, 请耐心等待"
