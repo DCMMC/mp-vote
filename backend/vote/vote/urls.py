@@ -96,13 +96,16 @@ def admin_login(request):
 
 def generate_pdf(url, tag):
     print('开始处理 ', tag, ': ', url)
-    subprocess.run(['bash', os.path.join(BASE_DIR,
-                                         'weixinCapture',
-                                         'generate_pdf.sh'),
-                    url,
-                    str(tag)])
-    print('完成处理 ', tag, ': ', url)
-    return 'http://' + deploy_domain + '/media/' + str(tag) + '.pdf'
+    if 'vote.ilingyue.cn' in url:
+        return url
+    else:
+        subprocess.run(['bash', os.path.join(BASE_DIR,
+                                             'weixinCapture',
+                                             'generate_pdf.sh'),
+                        url,
+                        str(tag)])
+        print('完成处理 ', tag, ': ', url)
+        return 'https://' + deploy_domain + '/media/' + str(tag) + '.pdf'
 
 
 @background(schedule=0)
