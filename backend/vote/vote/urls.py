@@ -261,32 +261,32 @@ def get_works(req):
                 })
         works = Works.objects.all()
         if len(works) > 0:
-            data = json.loads(str(req.body, encoding='utf8'))
-            user_id = data.get('userId', None)
-            if user_id:
-                works = works[0]
-                max_votes = works.max_votes
-                works = json.loads(works.works)
-                if UserVoteLog.objects.exists():
-                    u = UserVoteLog.objects.filter(wechat_openid=user_id)
-                    # for i in UserVoteLog.objects.all():
-                    #     print(i.wechat_openid, i.work_tag)
-                    for work in works:
-                        works[work]['voted'] = False
-                    if len(u) > 0:
-                        for vote in u:
-                            works[vote.work_tag]['voted'] = True
-                return JsonResponse({
-                    'code': 'success',
-                    'data': {
-                        'works': works,
-                        'max_votes': max_votes
-                    }
-                })
-            else:
-                return JsonResponse({
-                    'code': 'error'
-                })
+            # data = json.loads(str(req.body, encoding='utf8'))
+            # user_id = data.get('userId', None)
+            # if user_id:
+            works = works[0]
+            max_votes = works.max_votes
+            works = json.loads(works.works)
+            # if UserVoteLog.objects.exists():
+            #     u = UserVoteLog.objects.filter(wechat_openid=user_id)
+            #     # for i in UserVoteLog.objects.all():
+            #     #     print(i.wechat_openid, i.work_tag)
+            #     for work in works:
+            #         works[work]['voted'] = False
+            #     if len(u) > 0:
+            #         for vote in u:
+            #             works[vote.work_tag]['voted'] = True
+            return JsonResponse({
+                'code': 'success',
+                'data': {
+                    'works': works,
+                    'max_votes': max_votes
+                }
+            })
+            # else:
+            #     return JsonResponse({
+            #         'code': 'error'
+            #     })
         else:
             return JsonResponse({
                 'code': 'error',
