@@ -10,7 +10,7 @@
       v-model="showLoadingDialog"
       title="正在下载中"
       :showConfirmButton="false"
-      @loading="loading"
+      @progress="loading"
     >
   </van-dialog>
     <pdf :src="pdf_src" :page="1">
@@ -35,7 +35,8 @@ import { NavBar } from 'vant';
 
 Vue.use(NavBar);
 var fly=require("flyio")
-import pdf from 'pdfvuer'
+// import pdf from 'pdfvuer'
+import pdf from 'vue-pdf'
 
 export default {
   components: {
@@ -65,7 +66,7 @@ export default {
       this.$router.go(-1)
     },
     loading (e) {
-      this.showLoadingDialog = !e
+      this.showLoadingDialog = (e < 1.0)
     }
   }
 }

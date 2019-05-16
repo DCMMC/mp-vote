@@ -5604,7 +5604,7 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-pdfjs-dist@^2.0.489:
+pdfjs-dist@2.0.943, pdfjs-dist@^2.0.489:
   version "2.0.943"
   resolved "https://registry.npm.taobao.org/pdfjs-dist/download/pdfjs-dist-2.0.943.tgz#32fb9a2d863df5a1d89521a0b3cd900c16e7edde"
   integrity sha1-MvuaLYY99aHYlSGgs82QDBbn7d4=
@@ -7681,6 +7681,16 @@ vue-loader@^15.7.0:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-pdf@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.npm.taobao.org/vue-pdf/download/vue-pdf-4.0.6.tgz#6432e68aded8c551f4ce058c81119d7fdd97f2ff"
+  integrity sha1-ZDLmit7YxVH0zgWMgRGdf92X8v8=
+  dependencies:
+    babel-plugin-syntax-dynamic-import "^6.18.0"
+    pdfjs-dist "2.0.943"
+    raw-loader "^0.5.1"
+    vue-resize-sensor "^2.0.0"
 
 vue-resize-sensor@^2.0.0:
   version "2.0.0"
