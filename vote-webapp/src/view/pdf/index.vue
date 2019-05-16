@@ -8,7 +8,7 @@
     />
     <van-dialog
       v-model="showLoadingDialog"
-      title="正在下载中"
+      title="正在下载中, 请耐心等待"
       :showConfirmButton="false"
     >
   </van-dialog>
