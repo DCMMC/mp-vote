@@ -130,20 +130,21 @@ def process_works(max_votes, filename):
                     'desc': sheet['C' + str(idx)].value,
                     'imageURL': sheet['D' + str(idx)].value,
                     'origin_url': sheet['E' + str(idx)].value,
-                    'pdf_url': generate_pdf(sheet['E' + str(idx)].value, tag),
+                    # 'pdf_url': generate_pdf(sheet['E' + str(idx)].value, tag),
+                    'pdf_url': sheet['E' + str(idx)].value,
                     'votes': 0
                 }
                 idx += 1
             else:
                 break
-        if len(Works.objects.all()) > 0:
-            Works.objects.all()[0].delete()
-        w = Works(works=json.dumps(works))
-        w.max_votes = max_votes
-        w.save()
+        # if len(Works.objects.all()) > 0:
+        #     Works.objects.all()[0].delete()
+        # w = Works(works=json.dumps(works))
+        # w.max_votes = max_votes
+        # w.save()
         status = UploadStatus.objects.all()[0]
-        if UserVoteLog.objects.exists():
-            UserVoteLog.objects.all().delete()
+        # if UserVoteLog.objects.exists():
+        #     UserVoteLog.objects.all().delete()
         status.status = 'free'
         status.save()
     except Exception as e:
