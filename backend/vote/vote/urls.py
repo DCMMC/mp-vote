@@ -129,11 +129,11 @@ def process_works(max_votes, filename):
             idx += 1
         else:
             break
-    # if len(Works.objects.all()) > 0:
-    #     Works.objects.all()[0].delete()
-    # w = Works(works=json.dumps(works))
-    # w.max_votes = max_votes
-    # w.save()
+    if len(Works.objects.all()) > 0:
+        Works.objects.all()[0].delete()
+    w = Works(works=json.dumps(works))
+    w.max_votes = max_votes
+    w.save()
     # if UserVoteLog.objects.exists():
     #     UserVoteLog.objects.all().delete()
 
