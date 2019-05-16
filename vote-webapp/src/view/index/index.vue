@@ -2,10 +2,10 @@
   <div style="height: 100%;">
     <!-- <van-notify id="van-notify" /> -->
       <van-button size="large" type="primary" style="position:absolute;top:50%; width: 100%;" @click="getUserInfo">
-        使用微信账号身份登录
+        查看 ITD 作品
       </van-button>
     <van-button size="large" style="position:absolute;top:80%;width: 100%;" @click="toAdmin()">
-    管理员登录
+      管理员登录
     </van-button>
     <van-dialog
       v-model="showDialog"
@@ -54,7 +54,7 @@ export default {
   },
   mounted: function () {
     var name = 'openid'
-    this.openid = decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.href) || [, ""])[1].replace(/\+/g, '%20')) || decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(window.href) || [, ""])[1].replace(/\+/g, '%20')) || this.$route.query['openid'] || undefined
+    // this.openid = decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.href) || [, ""])[1].replace(/\+/g, '%20')) || decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(window.href) || [, ""])[1].replace(/\+/g, '%20')) || this.$route.query['openid'] || undefined
     // if (this.openid === '' || this.openid === undefined || this.openid === null) {
     //   this.login_href = this.deploy_domain + '/login'
     // }

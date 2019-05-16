@@ -16,10 +16,10 @@
     >
       <div slot="footer">
         <van-button size="small" type="danger"
-          @click="show_confirm_vote(work.tag, work.title, disable_all, work.voted)"
+          @click="show_confirm_vote()"
           :disabled="disable_all || work.voted"
           round style="padding-right: 5px;">
-          {{ work.btn_text }}
+          去投票
         </van-button>
         <van-button size="small" type="primary"
           @click="show_detail(work.tag)"
@@ -84,7 +84,7 @@ export default {
   },
   data () {
     return {
-      showLoadingDialog: false,
+      showLoadingDialog: true,
       // Test
       deploy_domain: 'https://vote.ilingyue.cn',
       // deploy_domain: 'http://142.93.185.148:8888',
@@ -97,6 +97,7 @@ export default {
       voted: 0,
       // 进入客服界面之前的提示信息
       subname: '',
+      vote_url: 'https://mp.weixin.qq.com/s/xBss_zKOtVrYdyfcZDU0Yg',
       // 作品, 先不用分页和懒加载
       works: {
         // '1': {
@@ -153,6 +154,7 @@ export default {
       userId: this.userId
     }).then(function (response) {
       console.log(response);
+      _this.showLoadingDialog = false
       if (response['data']['code'] === 'success') {
         // console.log(response['data']['data'])
         _this.works = response['data']['data']['works']
@@ -179,6 +181,7 @@ export default {
       }
     }).catch(function (error) {
       console.log(error);
+      _this.showLoadingDialog = false
       Notify('获取作品失败: ' + JSON.stringify(error));
     });
   },
@@ -197,46 +200,19 @@ export default {
     }
   },
   methods: {
-    show_confirm_vote (tag, title, disable_all, voted) {
-      if (disable_all) {
-        Notify('您已经使用完了所有票数(' + this.voted + ' 张)')
-      } else if (voted) {
-        Notify('您已经投票了该作品')
-      } else {
-        Dialog.confirm({
-          title: '确认投票',
-          message: '是否确认为作品 "' + title + '"(' + tag + ') 投票, 投票后不能撤销!'
-        }).then(() => {
-          // TODO
-          fly.post(this.deploy_domain + '/vote', {
-            user_id: this.userId,
-            tag: tag
-          })
-          .then(function (response) {
-            console.log(response);
-            Notify(JSON.stringify(response))
-            // Notify('作品 "' + title + '"( ' + tag + ') 投票成功');
-          })
-          .catch(function (error) {
-            console.log(error);
-            Notify('作品 "' + title + '"( ' + tag + ') 投票失败' + 
-            	JSON.stringify(error));
-          });
-          this.voted = this.voted + 1
-          Notify('作品 "' + title + '"( ' + tag + ') 投票成功, 剩余可投票数 ' + (this.max_votes - this.voted) + ' 张')
-          this.$set(this.works[tag], 'voted', true)
-          this.$set(this.works[tag], 'btn_text', '已投票')
-          if (this.max_votes <= this.voted) {
-            this.disable_all = true
-          }
-        }).catch(() => {
-          Toast('取消投票')
-        });
-      }
+    show_confirm_vote () {
+    	window.open(this.vote_url, '_blank')
     },
     show_detail (tag) {
       this.selectedWorkTag = tag
-      this.showDetailAction = true
+      this.showLoadingDialog = true
+      var url = this.works[this.selectedWorkTag]['pdf_url']
+      this.$router.push({ name: 'pdf', params: {
+      	pdf_src: url,
+      	// openid: this.openid
+      }})
+      this.showLoadingDialog = false
+      // this.showDetailAction = true
     },
     onActionClose () {
       this.showDetailAction = false

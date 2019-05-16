@@ -6,7 +6,7 @@ Vue.use(Router);
 const routes = [
   {
     path: '*',
-    redirect: '/index'
+    redirect: '/vote'
   },
   {
     name: 'index',

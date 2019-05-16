@@ -6,6 +6,13 @@
       left-arrow
       @click-left="onClickLeft"
     />
+    <van-dialog
+      v-model="showLoadingDialog"
+      title="正在下载中"
+      :showConfirmButton="false"
+      @loading="loading"
+    >
+  </van-dialog>
     <pdf :src="pdf_src" :page="1">
     </pdf>
   </div>
@@ -40,6 +47,7 @@ export default {
   },
   data () {
     return {
+      showLoadingDialog: true,
     }
   },
   props: {
@@ -55,6 +63,9 @@ export default {
   methods: {
     onClickLeft () {
       this.$router.go(-1)
+    },
+    loading (e) {
+      this.showLoadingDialog = !e
     }
   }
 }
