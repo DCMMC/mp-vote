@@ -43,8 +43,10 @@ logger = logging.getLogger(__name__)
 # deploy_domain = '192.168.1.103:8080'
 deploy_domain = 'vote.ilingyue.cn'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-wechat_appid = 'wx1f8565a373ffdead'
-wechat_appsecret = '8e16759000304ad924851a304aea4efa'
+# wechat_appid = 'wx1f8565a373ffdead'
+# wechat_appsecret = '8e16759000304ad924851a304aea4efa'
+wechat_appid = 'wx7712615077083255'
+wechat_appsecret = 'bc1240bde70263d6ab1d1ecc597cd911'
 wx_login = WeixinLogin(wechat_appid, wechat_appsecret)
 
 
