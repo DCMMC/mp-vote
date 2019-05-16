@@ -10,10 +10,9 @@
       v-model="showLoadingDialog"
       title="正在下载中"
       :showConfirmButton="false"
-      @progress="loading"
     >
   </van-dialog>
-    <pdf :src="pdf_src" :page="1">
+    <pdf :src="pdf_src" :page="1" @progress="loading">
     </pdf>
   </div>
 </template>
@@ -66,8 +65,8 @@ export default {
       this.$router.go(-1)
     },
     loading (e) {
-      console.log(JSON.stringify(e))
-      this.showLoadingDialog = (e < 1.0)
+      console.log(e)
+      this.showLoadingDialog = (('' + e) !== '1')
     }
   }
 }

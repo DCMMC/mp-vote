@@ -7613,7 +7613,7 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vant@^1.6.14:
+vant@^1.6.18:
   version "1.6.18"
   resolved "https://registry.npm.taobao.org/vant/download/vant-1.6.18.tgz#31819b73469cfd75241cbb2603974f2fcdec3018"
   integrity sha1-MYGbc0ac/XUkHLsmA5dPL83sMBg=
