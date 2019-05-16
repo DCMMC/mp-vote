@@ -15,30 +15,30 @@ async function main(url) {
   const status = await page.open(url);
   console.log(`Page opened with status [${status}].`);
 	// Wait a bit for javascript to load and run
-	await new Promise(resolve => setTimeout(resolve, 3000))
+	await new Promise(resolve => setTimeout(resolve, 30000))
 	console.log('sleep end')
 	// await page.includeJs("https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js");
 	// await page.includeJs("http://cdn.bootcss.com/jquery/2.1.4/jquery.mi.js").then(async (res) => {
 		console.log('included js')
 		await page.evaluate(function () {
 			console.log('start image lazy loading');
-			var $imgs = $('img');
+			// var $imgs = $('img');
 			var size = 0;
-			$imgs.each(function () {
-					var src = $(this).attr("src");
-					var data_src = $(this).attr("data-src")
-					if (data_src) {
-							$(this).attr("src", $(this).attr("data-src"));
-							size++;
-					}
-			});
+			// $imgs.each(function () {
+			// 		var src = $(this).attr("src");
+			// 		var data_src = $(this).attr("data-src")
+			// 		if (data_src) {
+			// 				$(this).attr("src", $(this).attr("data-src"));
+			// 				size++;
+			// 		}
+			// });
 			return size;
 		}).then((html) => {
 			setTimeout(() => {
 				page.render(__dirname + '/../media/' + tag_name + '.pdf');
 				// console.log(`File created at [./demo.pdf]`);
 				instance.exit();
-			}, 3000);
+			}, 10000);
 		});
 	// });
 }
