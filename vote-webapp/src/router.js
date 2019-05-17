@@ -35,7 +35,7 @@ const routes = [
     name: 'pdf',
     component: () => import('./view/pdf'),
     meta: {
-      title: '作品预览',
+      title: '',
     },
     props: true
   }
